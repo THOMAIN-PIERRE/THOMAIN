@@ -6,236 +6,328 @@
     
     </head>
     <style>
-            body{
-                font-family: Arial, Helvetica, sans-serif;
-                background-color:#FBF2B7;
-            }
-            #titre{
-                text-align:center;
-                font-size:50px;
-            }
-            h1{
-                color:orange;
-                text-shadow: 2px 2px 4px black;
-                text-align:center;
-                font-size:40px;
-            }
-            .image{
-                display:block;
-                margin-left:auto;
-                margin-right:auto;
-            }
-            #nav li {
-
-                display:inline;
-            }
-            #nav a{
-                text-decoration:none;
-            }
-            #nav {
-                position: relative;
-                text-align:justify;
-                font-family: sans-serif;
-                font-size: 30px;
-                /*padding: 5px;*/
-                /*border: 5px solid blue;*/
-                /*background-color: blue;*/
-                /*border-radius: 20px;*/
-                /*margin: 10px auto;*/
-                
-            
-            }  
-            #nav-home a{
-                border: 2px solid orange;
-                border-radius: 20px;
-                padding: 5px;
-                background-color: orange;
-                margin: auto;
-                
-            } 
-            #nav-concept a{
-                border: 2px solid orange;
-                border-radius: 20px;
-                padding: 5px;
-                background-color: orange;
-                margin: auto;
-                
-            }
         
-            #nav-menu a{
-                border: 2px solid orange;
-                border-radius: 20px;
-                padding: 5px;
-                background-color: orange;
-                margin: auto;
-                
-            }
+        @import url('https://fonts.googleapis.com/css?family=Lato|Mansalva&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+        
+        .up {
+            border: 2px solid black;
+            background-color: black;
+            height: 50px;
+            color: white;
+            font-weight: bold;
+            font-family:Arial;
+            
+        }
 
-            #nav-restaurant{
-                border: 2px solid orange;
-                border-radius: 20px;
-                padding: 5px;
-                background-color: orange;
-                margin: auto;
-                
-            }   
-            #nav-recipes{
-                border: 2px solid orange;
-                border-radius: 20px;
-                padding: 5px;
-                background-color: orange;
-                margin: auto;
-                
-            }
-            #nav-visitorbook{
-                border: 2px solid orange;
-                border-radius: 20px;
-                padding: 5px;
-                background-color: orange;
-                margin: auto;
-                
-            }
-            #nav-reservation{
-                border: 2px solid orange;
-                border-radius: 20px;
-                padding: 5px;
-                background-color: orange;
-                margin: auto;
-                
-            }
+        p.langue{
+            position:absolute;
+            top: 15px;
+            left: 5px;
+            font-size: 20px;
+        }
+        
+        p.contact{
+            position: absolute; 
+            top: -25px;
+            right: 5px;
+            font-size: 20px;
+            right: 
+        }
+        
+        #mansalva{
+            position: absolute;
+            top: 250px;
+            left: 500px;
+            font-family: 'Mansalva', cursive;
+            font-size: 80px;
+            color: white;
+            background-color: blue;
+            padding: 10px 15px;
+            border-radius: 40px;
+            border: 7px solid black;
 
-            caption{
-                caption-side:bottom;
-            }
-            a{
-                font-weight:bold;
-            }
-            .a:hover{
-                color:red;
-                font-weight:bold;
-            }
-            .Lignac{
-                
-                text-align:center;
-                font-size:30px;
-                color:red;
-            }
-            #bouton{
-                font-size:larger;
-                font-weight:bold;
-            }
-            .carte{
-                text-align:center;
-                list-style:none;
-                font-size:30px;
-            }
-            #info li {
-                display:inline;
-                color:black;
-            }
-            .article{
-                border: 5px dashed black;
-                height:400px;
-                background-color:red;
-                border-radius:20px;
-               
-            }
-            .image2{
-                border: 2px solid black;
-                margin-right: 10px;
-                margin-left:10px;
-            }
-            #image3{
-                position:relative;
-                bottom:-5px;
-            }
-            #image4{
-                position:relative;
-                bottom:-15px;
-                right:25px;
-            }
-            .image5{
-                position:relative;
-                left:700px;
-            }
-            .adress{
-                position:relative;
-                right:100px;
-            }
-            .article2{
-                border:5px;
-                height: 400px;
-                background-color:#d3d3d3;
-                border-radius: 20px 80px;
-                opacity:1;
-                margin-left: 30px;
-                margin-right: 30px;
-            }
-            .adresse{
-                line-height:3em;
-                font-size: 30px;
-                text-transform:uppercase;
-            }
-            .article3{
-                font-size: 20px;
-                height:350px;
-                border: 5px;
-                background-color:#d3d3d3;
-                border-radius: 20px 80px;
-                opacity:1;
-                margin-left: 30px;
-                margin-right: 30px;
-                
-            }
-            .contact{
-                text-transform:uppercase;
-                font-size: 30px;
-            }
-            .article4{
-                border: 5px;
-                height: 500px;
-                background-color:#d3d3d3;
-                border-radius: 20px 80px;
-                opacity:1;
-                margin-left: 30px;
-                margin-right: 30px;
-            }
-            .article5{
-                border: 5px;
-                height:550px;
-                background-color:#d3d3d3;
-                border-radius: 20px 80px;
-                opacity:1;
-                margin-left: 30px;
-                margin-right: 30px;
-                font-size:30px;
-            }
-            .horaire{
-                font-size: 40px;
-                position:relative;
-                top:-110px;
-                caption-side:bottom;
-            }
-            iframe{
-                float:right;
-                margin-right:200px;
-                margin-bottom: 100px;
+         }
+        #image_entete{
+            width: 1517px;
+            height: 400px;
 
-            }
-            #image3{
-                position:relative;
-                bottom:-15px;
-                width: 60px;
-                height: 60px;
+        }
+        body{
+            background-color:#7c7878;
+        }
+        
 
-            }
-            #image4{
-                position: relative;
-                bottom:-15px;
-                right:150px;
-                width: 60px;
-                height: 60px;
-            }
+
+        /*Code css de la page web*/
+
+        /* Styles généraux*/
+        body{
+            padding:0;
+            background-color: #7c7878;
+            font-family: 'Lato', sans-serif;
+            
+        }
+        body, h1, h2, p{
+            margin: 0;
+
+        }
+        #conteneur{
+            width:1500px;
+            margin: 20px auto 0 auto;
+            padding: 10px;
+            background-color: #7c7878;
+            margin-top: 2px;
+            margin-right: 200px;
+        }
+        /* Entête*/
+        #haut{
+            margin:0 0 10px 0;
+            padding: 5px;
+            background-color: #C0C0C0;
+        }
+        #haut h1, #haut h2 {
+            color:white;
+        }
+        /*Contenu principal*/
+        #contenu{
+            float: left;
+            width: 900px;
+            padding: 1px;
+            border-radius: 40px;
+            background-color: #7c7878;
+
+        }
+        #haut{
+            font-size: 30px;
+            font-weight: bold;
+            border-radius: 40px;
+            text-align: center;
+        }
+        #contenu h1{
+            font-size: 25px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            margin: 10px 0 10px 0;
+        }
+        #contenu p{
+            font-size: 20px;
+            color: black;
+        }
+
+        article{
+            margin: 0 0 20px 0;
+            border-top: 2px dotted white;
+
+        }
+        #navigation{
+            margin: 0 0 5px 0;
+            padding: 0;
+            background-color: blue;
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+        }
+        #navigation a{
+            text-decoration: none;
+            color: white;
+            font-size: 17px;
+            margin-bottom: 15px;
+        }
+        #chef{
+           float:left;
+           margin-top: 5px;
+           margin-right: 10px;
+          
+        }
+        .listemenus{
+            font-size: 40px;
+            font-weight: bold;
+            list-style: none;
+            text-align: center;
+            margin-top: 50px;   
+        }
+        #menus{
+            font-weight: bold;
+            margin-top: 20px;
+            color:white;
+        }
+        
+        
+
+
+        /*Colonne latérale*/
+        #sidebar{
+            float: left;
+            width: 550px;
+            margin: 0 0 0 10px;
+            padding: 18px;
+            background-color: #C0C0C0;
+            margin-top : 2px;
+            margin-bottom: 10px;
+            border-radius: 40px;
+
+        }
+        .titreplatdujour{
+            text-align: center;
+            font-weight: bold;
+            font-size: 50px;
+            padding-bottom: 10px;
+            color: red;
+        }
+        .platdujour{
+            text-align: center;
+            font-weight: bold;
+            font-size: 40px;
+            color: black;
+        }
+        .commentaire{
+            text-align: center;
+            font-size: 30px;
+            font-style: italic;
+            color: black;
+        }
+        #sidebar p.centre{
+            text-align: center;
+
+        }
+        .adresse{
+            text-align: center;
+            font-weight: bold;
+            font-size: 40px;
+            color: white;
+            margin-top: 60px;
+            margin-bottom: 40px;
+        }
+        .googlemap{
+            text-align: center;  
+        }
+        
+        .contact{
+            text-align: center;
+            margin-top: 40px;
+            margin-left: 28px;
+            font-size: 30px;
+            font-weight: bold;
+            color: white
+        }
+        .horaires{
+            text-align: center;
+            margin-top: 100px;
+            font-size: 30px;
+            font-weight: bold;
+            color: white
+        }
+        
+        
+
+        
+
+
+
+
+
+
+
+
+           
+     
+
+/* Conteneur navbar */
+.navbar {
+  overflow: hidden;
+  background-color: #7c7878;
+  font-family: Arial;
+}
+
+/* Lien à l'intérieur de la navbar */
+.navbar a {
+  float: left;
+  font-size: 29px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding: 20px 45.8px;
+  text-decoration: none;
+}
+
+/* Le container dropdown */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Bouton Dropdown */
+.dropdown .dropdown-button {
+  font-size: 29px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 20px 50px;
+  background-color: #7c7878;
+  font-family: inherit; /* Important pour l'alignement vertical sur téléphone mobile */
+  margin: 0; /* Important pour l'alignement vertical sur téléphone mobile */
+}
+
+/* Ajouter un background bleu au lien de la navbar quand la souris passe dessus */
+.navbar a:hover, .dropdown:hover .dropdown-button {
+  background-color: blue;
+}
+
+/* Contenu du dropdown (caché par défaut) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  z-index: 1;
+}
+
+/* Liens à l'intérieur du dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 15px 20px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Ajouter une couleur bleue de background aux liens du dropdown quand la souris passe dessus */
+.dropdown-content a:hover {
+  background-color: blue;
+}
+
+/* Montrer le menu dropdown quand la souris passe dessus */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* LE FOOTER*/
+
+        #footer{
+            background-color: black;
+            clear: both;
+            height: 200px;
+            text-decoration: none;
+            
+        }
+        #footer a{
+        
+        font-size: 10px;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        padding: 20px 45.8px;
+        text-decoration: none;
+        }
+        
+
+
+
             
     
             
@@ -243,23 +335,143 @@
 
     </style>
 <body>
-    <header class="header"> 
-        <h1 id="titre">LA FABRIQUE DU PETIT MANGE</h1>
-        <img id="image1" width="1500px" height="400px" src="https://mk0hotellenouveowyay.kinstacdn.com/wp-content/uploads/2019/01/restaurant-7-mers-bandeau.jpg" alt="photo restaurant"/>
+    <header> 
+        <div class="up">
+        <p class="langue">Français | English</p>
+        <p class="contact"> Contact &nbsp;&nbsp;05 59 39 70 23</p>
+        </div>
+      
+        
+       
     </header>
-    <nav>
-        <ul id="nav">
-            <li id="nav-home"><a href="test.html" target="_blank">ACCUEIL</a></li>
-            <li id="nav-concept"><a href="test2.html" target="_blank">CONCEPT</a></li>
-            <li id="nav-menu"><a href="test3.html" target="_blank">CARTE</a></li>
-            <li id="nav-restaurant"><a href="test4.html" target="_blank">RESTAURANT</a></li>
-            <li id="nav-recipes"><a href="test5.html" target="_blank">RECETTES</a></li>
-            <li id="nav-visitorbook"><a href="test6.html" target="_blank"">LIVRE D'OR</a></li>
-            <li id="nav-reservation"><a href="test7.html" target="_blank">RESERVATION</a></li>
-            <!--<button class="boutonmenuprincipal">Recettes</button>-->
-        </ul>
+    <nav class="navbar">
+        
+            <a href="test.html" target="_blank">ACCUEIL</a>
+            <a href="test2.html" target="_blank">RESTAURANT</a>
+            <a href="test3.html" target="_blank">CARTE</a>
+                <div class="dropdown">
+                        <button class="dropdown-button">RECETTES
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="recette1.html">Asperges rôties et oeuf poché au magret fumé</a>
+                          <a href="recette2.html">Foie gras de canard chaud aux clémentines</a>
+                          <a href="recette3.html">Poulet basquaise bleu-blanc coeur</a>
+                          <a href="recette4.html">Gratin de légume aux piments d'espelette</a>
+                          <a href="recette5.html">Poulet basquaise</a>
+                        </div>
+                      </div>
+                    </div>
+            <a href="test6.html" target="_blank">LIVRE D'OR</a>
+            <a href="test7.html" target="_blank">RESERVATION</a>
+            
+            <img id="image_entete" src="https://mk0hotellenouveowyay.kinstacdn.com/wp-content/uploads/2019/01/restaurant-7-mers-bandeau.jpg" alt="photo restaurant"/>
+            <p id="mansalva">LE COUNIC</p>
+            
 
-    </nav>
+        <div id="conteneur">
+            <header id="haut">
+                <h1>PLUS QU'UN RESTAURANT ... UNE EXPERIENCE GUSTATIVE</h1>     
+            </header>
+            <section id="contenu">
+                <article class="article_un">
+                    <h1>UN RESTAURANT MILITANT</h1>
+                    <p>Le Counic est un concept de <strong>restaurant écoresponsable</strong> dont le but est d'offrir à tous l'accès à des <strong>produits frais, fabriqués localements par de petits producteurs</strong>. Un plât spécial est ainsi crée chaque jour à partir de produits 100% régionaux par notre chef. Dès la conception de nos menus, nous veillons à limiter notre empreinte carbone en choisissant des produits de saison issus de <strong>l’agriculture biologique locale</strong>, en veillant à l’équilibre légumes / viande du plat. Nous <strong>recyclons nos épluchures et réduisons les portions</strong> pour éviter le gaspillage alimentaire. Nous veillons également à <strong>limiter notre consommation d'eau et d'énergie</strong>. C'est pourquoi, l'eau de nettoyage des légumes est réutilisée pour arroser les herbes aromatiques qui servent à l'élaboration de vos plâts. En salle, la décoration et le mobilier reflétent notre engagement. Nous avons choisis des <strong>matériaux nobles et durables</strong> comme le bois et un éclairage à LED pour réduire la consommation d’énergie. Voilà les valeurs que nous défendons et les engagements que nous prenons.</p> 
+                    <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</p>
+                </article>
+                <article class="article_deux">
+                    <h1>UN CHEF D'EXCEPTION</h1>
+                    <div>
+                    <img id="chef" src="https://previews.123rf.com/images/rh2010/rh20101702/rh2010170200194/71846768-chef-cuisinier-%C3%A0-la-cuisine.jpg" alt="Mister Cuisto" width="330px" height="250px" border="2px">
+                    <p>Formé à l'école Joel Robuchon, notre chef <strong>Jean Bertomieu (ou Mister Cool pour ses équipes)</strong> a seulement 29 ans, quand il prend les commandes des cuisines de <trong>l'hôtel Concorde Lafayette</strong> et dirige 90 cuisiniers, servant plusieurs milliers de repas par jour. Son professionnalisme, sa rigueur, son assurance, sa créativité lui taillent déjà une belle réputation. Après un passage remarqué en tant que chef et directeur de la restauration de <strong>l'hôtel Nikko</strong> où il décochera deux étoiles, <strong>il ouvre son restaurant à Oloron Sainte Marie en décembre 2010 : Le Counic</strong>.</p>
+                    </div>
+                </article>
+                <br>
+                <br>
+                <article class="article_trois">
+                        <h1>NOTRE CARTE</h1>
+                        <p>Tous les jours, en plus de vos plâts habituels, retrouvez le plât de jour du chef garanti 100% régional et 100% écoresponsable. <strong>Cliquez sur les liens ci-dessous pour découvrir les plâts spécialement conçus pour vous cette semaine :</strong></p>
+                    <nav id="navigation">   
+                        <p><a href="X">Lundi</a><a href="">Mardi</a><a href="">Mercredi</a><a href="">Jeudi</a><a href="">Vendredi</a><a href="">Samedi</a></p>
+                    </nav>
+                        <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</p> 
+                        <p id="menus">RETROUVEZ NOS MENUS CI-DESSOUS :</p>
+                        <!--<p class="menus_déjeuner">DEJEUNER (Entrée-Plât-Dessert, hors boissons)</p>
+                        <ul class="listemenus">
+                            <li>Menu Eco-responsable &rarr;  20 euros</li>
+                            <li>Menu Classique       &rarr;  30 euros</li>
+                            <li>Menu Prestige        &rarr;  40 euros</li>   
+                        </ul>
+                        <p class="menus_diner">DINER (Entrée-Plât-Dessert, hors boissons)</p>
+                        <ul class="listemenus">
+                            <li>Menu Eco-responsable &rarr;  20 euros</li>
+                            <li>Menu Classique       &rarr;  30 euros</li>
+                            <li>Menu Prestige        &rarr;  40 euros</li>   
+                        </ul>
+                    -->
+                        
+                
+                </article>
+            </section>
+            <aside id="sidebar">
+                <div>
+                    <p class="titreplatdujour">PLAT DU JOUR</p>
+                    <p class="centre"><img src="https://i.f1g.fr/media/madame/400x/sites/default/files/img/2011/09/176392208jpg.jpg" alt= "Noix de Saint Jacques panées" width="550" height="500"/></p>
+                    <p class="platdujour"> NOIX DE SAINT-JACQUES PANEES</p>
+                    <p class="commentaire">"Votre chef gourmand revisite un monument de la cuisine antillaise et la cuisine française dans cette recette audacieuse à base de fruits et de poisson."</p>
+                </div>
+                <div class="adresse">
+                    <p>Restaurant <i>"LE COUNIC"</i></p>
+                    <p>13 Rue Alfred de Vigny</p>
+                    <p>64400 Oloron Sainte Marie</p>
+                </div>
+                <div class="googlemap">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2908.8641963315977!2d-0.613766049089123!3d43.19136027903747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd56ffed5ccfb807%3A0x9203b410fe09526e!2s13%20Rue%20Alfred%20de%20Vigny%2C%2064400%20Oloron-Sainte-Marie!5e0!3m2!1sfr!2sfr!4v1569146840392!5m2!1sfr!2sfr" width="500" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+                <div class="contact">
+                    <p>Tél : O5 59 39 70 23</p>
+                    <a href="mailto:pierre.thomain@gmail.com">NOUS CONTACTER PAR MAIL</a>
+                </div>
+                <div class="horaires">
+                    <h1>HORAIRES</h1>
+                    <p>Du Lundi au Samedi</p>
+                    <p>Midi : 11h à 15h</p>
+                    <p>Soir : 19h à 23h</p>   
+                </div>
+            </aside>
+            <footer id="footer">
+                <ul>
+                    <li><a href="#" target="_blank">Mentions légales</a></li>
+                    <li><a href="#" target="_blank">Recrutement</a></li>
+                    <li><a href="#" target="_blank">Politique de confidentialité</a></li>
+                    <li><a href="#" target="_blank">Office de tourisme</a></li>
+                </ul>
+                    
+
+            </footer>
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--</nav>
     <section>
     <article class="article6">
         <h1>CONCEPT DU RESTAURANT</h1>
@@ -296,57 +508,7 @@
     </article>     
     <article class="article4" align="center">
         <h1>HORAIRES D'OUVERTURE</h1>
-        <!--<table border="2" align="center" width="120px" height="90px">
-        <thead>
-            <th>08h</th>
-            <th>09h</th>
-            <th>10h</th>
-            <th>11h</th>
-            <th>12h</th>
-            <th>13h</th>
-            <th>14h</th>
-            <th>15h</th>
-            <th>16h</th>
-            <th>17h</th>
-            <th>18h</th>
-            <th>19h</th>
-            <th>20h</th>
-            <th>21h</th>
-            <th>22h</th>
-            <th>23h</th>
-            <th>24h</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td bgcolor="red"></td>
-                <td bgcolor="red"></td>
-                <td bgcolor="red"></td>
-                <td bgcolor="red"></td>
-                <td bgcolor="red"></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td bgcolor="red"></td>
-                <td bgcolor="red"></td>
-                <td bgcolor="red"></td>
-                <td bgcolor="red"></td>
-                <td bgcolor="red"></td>
-                <td></td>
-            </tr>
-                <td colspan=17 align="center">Restaurant ouvert du mardi au dimanche</td>
-            
-        </tbody>
-
-        </tbody>
-
-        </thead>
-    </table>
-        <br>
-        <br>
-    <p><strong>* Le Bar est ouvert du mardi au dimanche de 10h à 23h</strong></p>-->
+        
 
     <table class="horaire" align="center" border="2">
         
@@ -417,19 +579,21 @@
     </article>
 
 
-    </section>
-    <hr>
+    </section>-->
+    
+    <!--
     <footer align="center">
         <ul id="info">
-            <li><a href="#" target="_blank">Informations légales</a></li>&nbsp &nbsp &nbsp
-            <li><a href="#" target="_blank">Recrutement</a></li>&nbsp &nbsp &nbsp
-            <li><a href="#" target="_blank">Plan du site</a></li>&nbsp &nbsp &nbsp
+            <li><a href="#" target="_blank">Informations légales</a></li>
+            <li><a href="#" target="_blank">Recrutement</a></li>
+            <li><a href="#" target="_blank">Plan du site</a></li>
             <li><a href="#" target="_blank">Nos partenaires</a></li>
         </ul>
 
         <button id="bouton"><a href="#top">Haut de page</a></button>
         <br>
         <br>
-    </footer>
+    </footer>-->
+
     </body>
     </html>
