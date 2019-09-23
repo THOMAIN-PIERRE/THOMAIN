@@ -19,7 +19,7 @@
             font-family:Arial;
             
         }
-
+        /*Choix de la langue pour le site*/
         p.langue{
             position:absolute;
             top: 15px;
@@ -34,7 +34,7 @@
             font-size: 20px;
             right: 
         }
-        
+        /*Nomdu restaurant*/
         #mansalva{
             position: absolute;
             top: 250px;
@@ -46,8 +46,8 @@
             padding: 10px 15px;
             border-radius: 40px;
             border: 7px solid black;
-
          }
+        /*Image d'entête*/
         #image_entete{
             width: 1517px;
             height: 400px;
@@ -160,10 +160,6 @@
             text-align: center;
             margin-top: 50px; 
         }
-        
-        
-
-
         /*Colonne latérale*/
         #sidebar{
             float: left;
@@ -227,97 +223,80 @@
             color: white
         }
         
-        
+        /*Barre de navigation*/
+        /* Conteneur navbar */
+        .navbar {
+        overflow: hidden;
+        background-color: #7c7878;
+        font-family: Arial;
+        }
 
-        
+        /* Lien à l'intérieur de la navbar */
+        .navbar a {
+        float: left;
+        font-size: 29px;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        padding: 20px 45.8px;
+        text-decoration: none;
+        }
 
+        /* Le container dropdown */
+        .dropdown {
+        float: left;
+        overflow: hidden;
+        }
 
+        /* Bouton Dropdown */
+        .dropdown .dropdown-button {
+        font-size: 29px;
+        font-weight: bold;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 20px 50px;
+        background-color: #7c7878;
+        font-family: inherit; /* Important pour l'alignement vertical sur téléphone mobile */
+        margin: 0; /* Important pour l'alignement vertical sur téléphone mobile */
+        }
 
+        /* Ajouter un background bleu au lien de la navbar quand la souris passe dessus */
+        .navbar a:hover, .dropdown:hover .dropdown-button {
+         background-color: blue;
+        }
 
+        /* Contenu du dropdown (caché par défaut) */
+        .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 160px;
+        z-index: 1;
+        }
 
+        /* Liens à l'intérieur du dropdown */
+        .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 15px 20px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        }
 
+        /* Ajouter une couleur bleue de background aux liens du dropdown quand la souris passe dessus */
+        .dropdown-content a:hover {
+        background-color: blue;
+        }
 
-
-           
-     
-
-/* Conteneur navbar */
-.navbar {
-  overflow: hidden;
-  background-color: #7c7878;
-  font-family: Arial;
-}
-
-/* Lien à l'intérieur de la navbar */
-.navbar a {
-  float: left;
-  font-size: 29px;
-  font-weight: bold;
-  color: white;
-  text-align: center;
-  padding: 20px 45.8px;
-  text-decoration: none;
-}
-
-/* Le container dropdown */
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-/* Bouton Dropdown */
-.dropdown .dropdown-button {
-  font-size: 29px;
-  font-weight: bold;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 20px 50px;
-  background-color: #7c7878;
-  font-family: inherit; /* Important pour l'alignement vertical sur téléphone mobile */
-  margin: 0; /* Important pour l'alignement vertical sur téléphone mobile */
-}
-
-/* Ajouter un background bleu au lien de la navbar quand la souris passe dessus */
-.navbar a:hover, .dropdown:hover .dropdown-button {
-  background-color: blue;
-}
-
-/* Contenu du dropdown (caché par défaut) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: white;
-  min-width: 160px;
-  z-index: 1;
-}
-
-/* Liens à l'intérieur du dropdown */
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 15px 20px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-/* Ajouter une couleur bleue de background aux liens du dropdown quand la souris passe dessus */
-.dropdown-content a:hover {
-  background-color: blue;
-}
-
-/* Montrer le menu dropdown quand la souris passe dessus */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
+        /* Montrer le menu dropdown quand la souris passe dessus */
+        .dropdown:hover .dropdown-content {
+        display: block;
+        }
 
 
-/* LE FOOTER*/
-
-            
-        
-
+        /* LE FOOTER*/
 
         #footer{
             background-color: black;
@@ -357,17 +336,6 @@
             
         }
        
-
-        
-        
-
-
-
-            
-    
-            
-            
-
     </style>
 <body>
     <header> 
@@ -378,8 +346,8 @@
     </header>
     <nav class="navbar">
             <a href="test.html" target="_blank">ACCUEIL</a>
-            <a href="test2.html" target="_blank">RESTAURANT</a>
-            <a href="test3.html" target="_blank">CARTE</a>
+            <a href="Restaurant.html" target="_blank">RESTAURANT</a>
+            <a href="Carte.html" target="_blank">CARTE</a>
                 <div class="dropdown">
                         <button class="dropdown-button">RECETTES
                           <i class="fa fa-caret-down"></i>
@@ -393,8 +361,8 @@
                         </div>
                       </div>
                     </div>
-            <a href="test6.html" target="_blank">LIVRE D'OR</a>
-            <a href="test7.html" target="_blank">RESERVATION</a>
+            <a href="LivreOr.html" target="_blank">LIVRE D'OR</a>
+            <a href="Réservation.html" target="_blank">RESERVATION</a>
             
             <img id="image_entete" src="https://mk0hotellenouveowyay.kinstacdn.com/wp-content/uploads/2019/01/restaurant-7-mers-bandeau.jpg" alt="photo restaurant"/>
             <p id="mansalva">LE COUNIC</p>
@@ -437,9 +405,6 @@
                             <li>Menu Classique       &rarr;  30 euros</li>
                             <li>Menu Prestige        &rarr;  40 euros</li>   
                         </ul>
-                    
-                        
-                
                 </article>
             </section>
             <aside id="sidebar">
@@ -472,9 +437,9 @@
                     <a href="#" target="_blank">Mentions légales</a></li>
                     <a href="#" target="_blank">Politique de confidentialité</a></li>
                     <a href="https://www.pyrenees-bearnaises.com/pratique/presentation-de-loffice-de-tourisme-du-haut-bearn/" target="_blank">Office de tourisme</a></li>
-                    <a id="facebook" href="https://facebook.com"><img src="https://cdn.pixabay.com/photo/2015/05/17/10/51/facebook-770688_960_720.png" alt="logo Facebook" width="60px" height="60px"/></a>
-                    <a id="instagram" href="https://instagram.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/220px-Instagram_logo_2016.svg.png" alt="logo Instagram" width="60px" height="60px"/></a>
-                    <a id="twitter" href="https://twitter.com"><img src="https://ciervoblanco.club/wp-content/uploads/2016/04/ciervo-blanco-club-de-lectura-twitter-logo.png" alt="logo Twitter" width="75px" height="75px"/></a>
+                    <a id="facebook" href="https://facebook.com" target="_blank"><img src="https://cdn.pixabay.com/photo/2015/05/17/10/51/facebook-770688_960_720.png" alt="logo Facebook" width="60px" height="60px"/></a>
+                    <a id="instagram" href="https://instagram.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/220px-Instagram_logo_2016.svg.png" alt="logo Instagram" width="60px" height="60px"/></a>
+                    <a id="twitter" href="https://twitter.com" target="_blank"><img src="https://ciervoblanco.club/wp-content/uploads/2016/04/ciervo-blanco-club-de-lectura-twitter-logo.png" alt="logo Twitter" width="75px" height="75px"/></a>
                     <a id="haut_de_page" href="#Top">Haut de page</a>
         </footer>
     </body>
@@ -498,129 +463,5 @@
 
 
 
-    <!--</nav>
-    <section>
-    <article class="article6">
-        <h1>CONCEPT DU RESTAURANT</h1>
-        <p id="concept">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
-        Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
-        Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
-        Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-        <table width="400px" align="center">
-        <img class="image" src="https://previews.123rf.com/images/rh2010/rh20101702/rh2010170200194/71846768-chef-cuisinier-%C3%A0-la-cuisine.jpg" alt="Jean Bertomieu, chef cuisinier" width="400px" height="300px" align="center" border="2px">
-        <caption><strong>MISTER CUISTO</strong> alias <u>Jean Bertomieu</u> chef étoilé au guide Michelin vous accueille pour une "expérience culinaire"</caption>
-        </table>
-    </article>
-    <article class="article">
-        <h1>PLAT DU JOUR !</h1>
-        <img class="image2" src="http://www.certiferme.com/imgs/contenu/recette_photo/blog-36705-roti-de-magrets-de-canard-et-ces-pommes-de-terre-raymondmarmiton-220712091221-8559187786.jpg" alt="Magret de canard et ses pommes au four" border="0" width=200px height=200px style="float: left;"/>
-        <p id="platdujour">Pellentesque habitant morbi tristique senectus et <b>netus et malesuada fames ac turpis egestas</b>. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
-        Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
-        Donec eu libero <b>sit amet quam egestas semper</b>. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ant. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
-        Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. <b>auris placerat eleifend leo</b>. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
-        Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ant.Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
-       
-        </p>  
-    </article>
-    <article class="article2" align="center">
-        <h1>ADRESSE</h1>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2908.864009926658!2d-0.6137660490875491!3d43.19136419008706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd56ffed5ccfb807%3A0x9203b410fe09526e!2s13%20Rue%20Alfred%20de%20Vigny%2C%2064400%20Oloron-Sainte-Marie!5e0!3m2!1sfr!2sfr!4v1568824075160!5m2!1sfr!2sfr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-        <p class="adresse">
-        <strong>13 rue Alfred de Vigny<br>64400 Oloron Sainte Marie<br>France</strong></p>
-    </article>
-    <article class="article3" align="center">
-        <h1>TELEPHONE / Email</h1>
-        <p class="contact"><img id="image3" src="https://cdn.pixabay.com/photo/2017/01/10/03/54/icon-1968244_960_720.png" alt="phone" >&nbsp;&nbsp;&nbsp; N° Réservation : +33 (O) 5 59 39 70 23</p>
-        <img id="image4" src="https://freevector-images.s3.amazonaws.com/uploads/vector/preview/39003/FreeVectorOfTheDay81MailIcon.jpg" alt="email" >&nbsp;&nbsp;&nbsp;<i><a class="a" href="mailto:fabriquedupetitmange@gmail.com">NOUS CONTACTER PAR MAIL</a></p>
-    </article>     
-    <article class="article4" align="center">
-        <h1>HORAIRES D'OUVERTURE</h1>
-        
-
-    <table class="horaire" align="center" border="2">
-        
-        <tr>
-            <td>&nbsp;</td>
-            <td><strong>MIDI</strong</td>
-            <td><strong>SOIR</strong/td>
-        </tr>
-        <br>    
-        <tr>
-            <td><strong>MARDI</strong></td>
-            <td>11h-15h</td>
-            <td>18h-23h</td>
-        </tr>
-        <br>
-        <tr>
-            <td><strong>MERCREDI</strong</td>
-            <td>11h-15h</td>
-            <td>18h-23h</td>
-        </tr>
-        <br>
-        <tr>
-            <td><strong>JEUDI</strong</td>
-            <td>11h-15h</td>
-            <td>18h-23h</td>
-        </tr>
-        <br>
-        <tr>
-            <td><strong>VENDREDI</strong</td>
-            <td>11h-15h</td>
-            <td>18h-23h</td>
-        </tr>
-        <br>
-        <tr>
-            <td><strong>SAMEDI</strong</td>
-            <td>10h-15h</td>
-            <td>18h-Minuit</td>
-        </tr>
-        <br>
-        <tr>
-            <td><strong>DIMANCHE</strong</td>
-            <td>10h-15h</td>
-            <td>18h-Minuit</td>        
-        </tr>
-      
-    </table>
-
-    </article>
-    <article class="article5">
-        <h1>CARTE</h1>
-        <details open align="center">    
-            <Summary class="Lignac">Dégustez une carte élaborée en colaboration avec le célèbre chef <strong>Cyril Lignac</strong></summary>
-            <strong><i>Déjeuner</i></strong>
-            <ul class="carte">
-                <li><u>Menu malin (enfants)</u> (Entrée-Plat-Dessert)  <strong>10 euros</strong></li>
-                <li><u>Formule midi</u> (Entrée-Plat-Dessert) <strong>12 euros</strong></li>
-                <li><u>Menu classique</u> (Entrée-Plat-Dessert) <strong>20 euros</strong></li>
-            </ul>
-            <br>
-            <strong><i>Diner</i></strong>
-            <ul class="carte">
-                    <li><u>Menu malin (enfants)</u> (Entrée-Plat-Dessert)  <strong>10 euros</strong></li>
-                    <li><u>Menu classique</u> (Entrée-Plat-Dessert) <strong>20 euros</strong></li>
-                    <li><u>Menu prestige</u> (Entrée-Plat-Dessert) <strong>30 euros</strong></li>
-                </ul>
-                
-        </details>
-    </article>
-
-
-    </section>-->
     
-    <!--
-    <footer align="center">
-        <ul id="info">
-            <li><a href="#" target="_blank">Informations légales</a></li>
-            <li><a href="#" target="_blank">Recrutement</a></li>
-            <li><a href="#" target="_blank">Plan du site</a></li>
-            <li><a href="#" target="_blank">Nos partenaires</a></li>
-        </ul>
 
-        <button id="bouton"><a href="#top">Haut de page</a></button>
-        <br>
-        <br>
-    </footer>-->
-
-    </body>
-    </html>
