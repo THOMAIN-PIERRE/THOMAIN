@@ -32,9 +32,10 @@
             top: -75px;
             right: 5px;
             font-size: 20px;
-            right: 
+           
         }
         /*Nom du restaurant*/
+        
         #mansalva{
             position: absolute;
             top: 250px;
@@ -47,6 +48,7 @@
             border-radius: 40px;
             border: 7px solid black;
          }
+
         /*Image d'entête*/
         #image_entete{
             width: 1517px;
@@ -86,7 +88,7 @@
             padding: 5px;
             background-color: #C0C0C0;
         }
-        #haut h1, #haut h2 {
+        #haut h1{
             color:white;
         }
         /*Contenu principal*/
@@ -99,7 +101,7 @@
 
         }
         #haut{
-            font-size: 30px;
+            font-size: 25px;
             font-weight: bold;
             border-radius: 40px;
             text-align: center;
@@ -243,9 +245,8 @@
         
         .contact{
             text-align: center;
-            margin-top: 90px;
             margin-left: 5px;
-            font-size: 20px;
+            font-size: 30px;
             font-weight: bold;
             color: white;
             margin-bottom: 60px;
@@ -355,11 +356,10 @@
         #footer{
             background-color: black;
             clear: both;
-            height: 200px;
+            height: 220px;
             }
 
         #footer a{
-        
             font-size: 20px;
             font-weight: bold;
             color: white;
@@ -367,29 +367,25 @@
             margin-left: 110px;
         
         }
-        #facebook{
+        #infos_complémentaires{
             position: relative;
-            left: 400px;
-            bottom: 10px;
-        }
-
-        #instagram{
-            position: relative;
-            left: 200px;
-            bottom: 10px;
-        }
-        #twitter{
-            position: relative;
-            right: 10px;
-            bottom: 18px;
-        }
-        #haut_de_page{
-            position: relative;
-            right: 550px;
-            top: 80px;
+            left: 160px;
+            top: 20px;
             
         }
-       
+
+        #logos{
+            position: relative;
+            left: 330px;
+            top: 50px;
+        }
+        
+        #haut_de_page{
+            position: relative;
+            top: 80px;
+            left: 570px;
+            
+        }
     </style>
 <body>
     <header> 
@@ -399,7 +395,7 @@
         </div>   
     </header>
     <nav class="navbar">
-            <a href="test.html" target="_blank">ACCUEIL</a>
+            <a href="Accueil.html" target="_blank">ACCUEIL</a>
             <a href="Restaurant.html" target="_blank">RESTAURANT</a>
             <a href="Carte.html" target="_blank">CARTE</a>
                 <div class="dropdown">
@@ -414,24 +410,23 @@
                           <a href="recette5.html">Poulet basquaise</a>
                         </div>
                       </div>
-                    </div>
             <a href="LivreOr.html" target="_blank">LIVRE D'OR</a>
             <a href="Réservation.html" target="_blank">RESERVATION</a>
-            
+     </nav>       
             <img id="image_entete" src="https://mk0hotellenouveowyay.kinstacdn.com/wp-content/uploads/2019/01/restaurant-7-mers-bandeau.jpg" alt="photo restaurant"/>
             <p id="mansalva">LE COUNIC</p>
             <div id="conteneur">
-        <header id="haut">
-                <h1>UN RESTAURANT OUVERT SUR LES PYRENNEES</h1>     
-        </header>
+            <div id="haut">
+            <h1>UN RESTAURANT OUVERT SUR LES PYRENNEES</h1>     
+            </div>
             <section id="contenu">
-                <article class="article_un">
+                <article>
                     <h1>UN PANORAMA SOMPTUEUX DANS UNE VILLE CHARGEE D'HISTOIRE</h1>
                     <img id="panorama" src="https://live.staticflickr.com/8315/8035284707_a6997d6c7c_b.jpg" width="450px" height="300px" border="2px">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut elit nisl. Mauris et interdum diam, id fringilla risus. Proin mollis mauris felis, in lacinia est tincidunt ac. Nulla pretium elementum arcu, eget faucibus nibh euismod ut. Curabitur faucibus metus vitae consequat eleifend. Pellentesque in tortor sit amet ante porta fringilla ut ac lorem. Sed finibus et dui eu cursus. Donec elementum sed lorem id mattis. Nullam scelerisque varius turpis in ultricies. Nunc massa odio, posuere vel tincidunt ut, venenatis nec sapien. Ut ultrices lobortis enim ac volutpat.
                         Donec ornare placerat nisi nec malesuada. Quisque accumsan nibh sit amet augue molestie aliquam sit amet ut ligula. Aenean dui tellus, dapibus eu pulvinar ut, tristique ut tortor. Cras scelerisque odio sit amet metus cursus, id gravida nisi euismod. Nunc consequat risus ac ante gravida placerat. Phasellus tempus quam vel lobortis ultricies. Ut facilisis semper velit nec efficitur. Donec ut commodo ipsum. Quisque aliquet arcu in erat ultrices maximus. Vivamus tellus dui, ultrices id varius lacinia, lacinia at est. Morbi dignissim ultrices tellus vitae rutrum.</p>
                 </article>
-                <article class="article_deux">
+                <article>
                     <h1>UN DECOR SOIGNE POUR VOS DEJEUNERS ET DINERS</h1>
                     <div>
                     <img id="salle_restaurant1" src="https://mk0hotellenouveowyay.kinstacdn.com/wp-content/uploads/2019/01/restaurant-7-mers-bandeau.jpg" width="900px" height="400px" border="2px">
@@ -444,7 +439,7 @@
                 </article>
                 <br>
                 <br>
-                <article class="article_trois">
+                <article>
                         <h1>EVENEMENTS SPECIAUX ET SEMINAIRES</h1>
                         <img id="salle_séminaires1" src="https://mk0hotellenouveowyay.kinstacdn.com/wp-content/uploads/2012/01/salle-reunion-768x511.jpg" width="900px" height="400px" border="2px">
                         <p>Doté de salles de réception spacieuses et bien équipées, le restaurant sera heureux de vous accueillir pour vos évènemets familiaux (baptêmes, communions, mariages, ...) ainsi que pour vos séminaires professionnels.</p>
@@ -484,15 +479,20 @@
                     <p class="lo"><a href="LivreOr.html">LIVRE D'OR</a></p>
                 </div>
             </aside>
-        <footer id="footer">
-                    <a href="Mentions Légales.html" target="_blank">Mentions légales</a></li>
-                    <a href="Politique de confidentialité.html" target="_blank">Politique de confidentialité</a></li>
-                    <a href="https://www.pyrenees-bearnaises.com/pratique/presentation-de-loffice-de-tourisme-du-haut-bearn/" target="_blank">Office de tourisme</a></li>
-                    <a id="facebook" href="https://facebook.com" target="_blank"><img src="https://cdn.pixabay.com/photo/2015/05/17/10/51/facebook-770688_960_720.png" alt="logo Facebook" width="60px" height="60px"/></a>
-                    <a id="instagram" href="https://instagram.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/220px-Instagram_logo_2016.svg.png" alt="logo Instagram" width="60px" height="60px"/></a>
-                    <a id="twitter" href="https://twitter.com" target="_blank"><img src="https://ciervoblanco.club/wp-content/uploads/2016/04/ciervo-blanco-club-de-lectura-twitter-logo.png" alt="logo Twitter" width="75px" height="75px"/></a>
-                    <a id="haut_de_page" href="#Top">Haut de page</a>
-        </footer>
+            <footer id="footer">
+                    <div id="infos_complémentaires">    
+                        <a href="Mentions_Legales.html" target="_blank">Mentions légales</a></li>
+                        <a href="Politique_de_confidentialite.html" target="_blank">Politique de confidentialité</a></li>
+                        <a href="https://www.pyrenees-bearnaises.com/pratique/presentation-de-loffice-de-tourisme-du-haut-bearn/" target="_blank">Office du tourisme</a></li>
+                    </div> 
+                    <div id="logos"> 
+                        <a id="facebook" href="https://facebook.com" target="_blank"><img src="https://cdn.pixabay.com/photo/2015/05/17/10/51/facebook-770688_960_720.png" alt="logo Facebook" width="60px" height="60px"/></a>
+                        <a id="instagram" href="https://instagram.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/220px-Instagram_logo_2016.svg.png" alt="logo Instagram" width="60px" height="60px"/></a>
+                        <a id="twitter" href="https://twitter.com" target="_blank"><img src="https://ciervoblanco.club/wp-content/uploads/2016/04/ciervo-blanco-club-de-lectura-twitter-logo.png" alt="logo Twitter" width="75px" height="75px"/></a>
+                     </div>   
+                        <a id="haut_de_page" href="#Top">Haut de page</a>
+            </footer>
+        </div>
     </body>
 </html>
 

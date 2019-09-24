@@ -118,7 +118,7 @@
 
         article{
             margin: 0 0 20px 0;
-            border-top: 2px dotted white;
+            
 
         }
         #navigation{
@@ -219,7 +219,7 @@
             margin-top : 2px;
             margin-bottom: 10px;
             border-radius: 40px;
-            height: 2900px;
+            height: 1100px;
 
         }
         .information{
@@ -384,11 +384,10 @@
         #footer{
             background-color: black;
             clear: both;
-            height: 200px;
+            height: 220px;
             }
 
         #footer a{
-        
             font-size: 20px;
             font-weight: bold;
             color: white;
@@ -396,28 +395,74 @@
             margin-left: 110px;
         
         }
-        #facebook{
+        #infos_complémentaires{
             position: relative;
-            left: 400px;
-            bottom: 10px;
-        }
-
-        #instagram{
-            position: relative;
-            left: 200px;
-            bottom: 10px;
-        }
-        #twitter{
-            position: relative;
-            right: 10px;
-            bottom: 18px;
-        }
-        #haut_de_page{
-            position: relative;
-            right: 550px;
-            top: 80px;
+            left: 160px;
+            top: 20px;
             
         }
+
+        #logos{
+            position: relative;
+            left: 330px;
+            top: 50px;
+        }
+        
+        #haut_de_page{
+            position: relative;
+            top: 80px;
+            left: 570px;
+            
+        }
+            
+        #lo{
+            
+            margin-top: 30px; 
+            width:"500px";
+            height:"400px";
+            position: relative;
+            left: 50px;
+        }
+        #livre_or{
+            Position: relative;
+            margin-right: 50px;
+            margin-left:50px;
+            top: 60px;
+            Text-align: center;
+            Color: white;
+            font-size: 30px;
+            font-weight: bold;
+            font-family: 'Lato', sans-serif;
+            width: 450px;
+            Text-align: justify;
+            
+             
+        }
+        .titre_formulaire{
+            font-family: 'Lato', sans-serif;
+            color: White;
+            font-size: 25px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .formulaire{
+            color: black;
+            font-size: 35px;
+            font-weight: bold;
+        }
+        input{
+            font-size: 35px;
+            font-weight: bold;
+        }
+        textarea{
+            font-size: 20px;
+            
+        }
+        <script>
+
+        
+        
+        </script>
        
     </style>
 <body>
@@ -443,39 +488,54 @@
                           <a href="recette5.html">Poulet basquaise</a>
                         </div>
                       </div>
-                    </div>
             <a href="LivreOr.html" target="_blank">LIVRE D'OR</a>
             <a href="Réservation.html" target="_blank">RESERVATION</a>
-            
+    </nav>      
             <img id="image_entete" src="https://mk0hotellenouveowyay.kinstacdn.com/wp-content/uploads/2019/01/restaurant-7-mers-bandeau.jpg" alt="photo restaurant"/>
             <p id="mansalva">LE COUNIC</p>
             <div id="conteneur">
-        <header id="haut">
-                <h1>LE LIVRE D'OR</h1>     
-        </header>
+            <div id="haut">
+                <h1>LIVRE D'OR DU RESTAURANT</h1>     
+            </div>
             <section id="contenu">
                 <article>
-                    <h1>MENU ECO-RESPONSABLE</h1>
+                    <div class="titre_formulaire">
+                        <h2>FORMULAIRE DE CONTACT</h2>
+                    </div>   
+                    <div class="formulaire">
+                        <form action="ch11_traitement_du_formulaire.php" method="post" autocomplete="off">
+                        Nom :<br/><input type="text" name="nom" style="width: 420px; height: 40px;" required><br/><br/>
+                        Prénom :<br/><input type="text" name="prénom" style="width: 420px; height: 40px;" required><br/><br/>
+                        Adresse email (Requis) :<br/><input type="email" name="email" style="width: 420px; height: 40px;" required><br/><br/>
+                        Commentaire :<br/><textarea rows="18" cols="60" name="commentaire"></textarea><br/><br/>
+                        <input type="submit" name="valider" value="Valider">
+                        </form>
+                    </div>
+
+
                    
-                    <h1>MENU CLASSIQUE</h1>
                     
-                        <h1>MENU PRESTIGE</h1>
                         
                 </article>
             </section>
             <aside id="sidebar">
-                    <p class="information">INFORMATIONS</p>  
-                    
+                    <img id="lo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPLqYOUEUvw7PHIlKKLBprgJmEx9WVKjN1jXNBwGJ65IDr1d24" alt="Livre d'Or" width="450" height="400">
+                    <p id="livre_or">Parceque l'avis de nos clients compte pour nous, nous avons choisi de mettre a votre disposition ce Livre d'Or afin de recueillir vos avis, vos commentaires, vos suggestions. Cet espace d'expression vous est dédié, faites en bon usage. Nous attendons vos messages avec impatience !</p>
             </aside>
-        <footer id="footer">
-                    <a href="Mentions Légales.html" target="_blank">Mentions légales</a></li>
-                    <a href="Politique de confidentialité.html" target="_blank">Politique de confidentialité</a></li>
-                    <a href="https://www.pyrenees-bearnaises.com/pratique/presentation-de-loffice-de-tourisme-du-haut-bearn/" target="_blank">Office de tourisme</a></li>
-                    <a id="facebook" href="https://facebook.com" target="_blank"><img src="https://cdn.pixabay.com/photo/2015/05/17/10/51/facebook-770688_960_720.png" alt="logo Facebook" width="60px" height="60px"/></a>
-                    <a id="instagram" href="https://instagram.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/220px-Instagram_logo_2016.svg.png" alt="logo Instagram" width="60px" height="60px"/></a>
-                    <a id="twitter" href="https://twitter.com" target="_blank"><img src="https://ciervoblanco.club/wp-content/uploads/2016/04/ciervo-blanco-club-de-lectura-twitter-logo.png" alt="logo Twitter" width="75px" height="75px"/></a>
-                    <a id="haut_de_page" href="#Top">Haut de page</a>
+            <footer id="footer">
+                    <div id="infos_complémentaires">    
+                        <a href="Mentions_Legales.html" target="_blank">Mentions légales</a></li>
+                        <a href="Politique_de_confidentialite.html" target="_blank">Politique de confidentialité</a></li>
+                        <a href="https://www.pyrenees-bearnaises.com/pratique/presentation-de-loffice-de-tourisme-du-haut-bearn/" target="_blank">Office du tourisme</a></li>
+                    </div> 
+                    <div id="logos"> 
+                        <a id="facebook" href="https://facebook.com" target="_blank"><img src="https://cdn.pixabay.com/photo/2015/05/17/10/51/facebook-770688_960_720.png" alt="logo Facebook" width="60px" height="60px"/></a>
+                        <a id="instagram" href="https://instagram.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/220px-Instagram_logo_2016.svg.png" alt="logo Instagram" width="60px" height="60px"/></a>
+                        <a id="twitter" href="https://twitter.com" target="_blank"><img src="https://ciervoblanco.club/wp-content/uploads/2016/04/ciervo-blanco-club-de-lectura-twitter-logo.png" alt="logo Twitter" width="75px" height="75px"/></a>
+                     </div>   
+                        <a id="haut_de_page" href="#Top">Haut de page</a>
         </footer>
+        </div>
     </body>
 </html>
 
