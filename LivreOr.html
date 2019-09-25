@@ -3,6 +3,26 @@
     <head>
         <meta charset="utf-8">
         <title>Livre d'Or</title>
+        <!--<script>
+            const commentaire_lo = document.getElementById('signUpForm');
+            const courriel = document.getElementById('courriel');
+            const okButton = document.getElementById('okButton');
+  
+            courriel.addEventListener('keyup', function (event) {
+            isValidEmail = courriel.checkValidity();
+  
+            if ( courriel ) {
+            okButton.disabled = false;
+            } else {
+                okButton.disabled = true;
+            }
+            });
+  
+            okButton.addEventListener('click', function (event) {
+            commentaire_lo.submit();
+
+        </script>-->
+        
     
     </head>
     <style>
@@ -458,11 +478,155 @@
             font-size: 20px;
             
         }
-        <script>
 
+        /*Donner des styles a mon formulaire Livre d'Or*/
+
+        /*input[name=nom]:focus {
+        border: 7px solid yellow;
+        box-shadow:5px 5px 5px 5px black;
         
+        }
+        input[name=prenom]:focus {
+        border: 7px solid yellow;
+        box-shadow:5px 5px 5px 5px black;
         
-        </script>
+        }
+        input[name=email]:focus {
+        border: 7px solid yellow;
+        box-shadow:5px 5px 5px 5px black;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        }
+        textarea:focus {
+        border: 5px solid yellow;
+        box-shadow:5px 5px 5px 5px black;
+        overflow-y: scroll;
+        }
+        input:valid {
+        border: 7px solid lightgreen;   
+        }
+        input:invalid {
+        border-color: 5px solid red;
+        }
+        #btn_envoyer{
+            border: 7px solid none;  
+        }*/
+    
+
+
+
+    /*Elements de stylisation de mon tableau*/    
+        form {
+  /* Pour le centrer dans la page */
+  margin: 0 auto;
+  width: 600px;
+
+  /* Pour voir les limites du formulaire */
+  padding: 1em;
+  border: 2px solid white;
+  border-radius: 3em;
+}
+
+div + div {
+  margin-top: 1em;
+}
+
+label {
+  /* Afin de s'assurer que toutes les étiquettes aient la même dimension et soient alignées correctement */
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  font-size: 22px;
+  
+}
+
+input, textarea {
+  /* Afin de s'assurer que tous les champs textuels utilisent la même police
+     Par défaut, textarea utilise une police à espacement constant */
+  font: 1.4em sans-serif;
+
+  /* Pour donner la même dimension à tous les champs textuels */
+  width: 400px;
+  height: 40px;
+
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+
+  /* Pour harmoniser l'apparence des bordures des champs textuels */
+  border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+  /* Afin de réhausser les éléments actifs */
+  border: 7px solid yellow;
+  box-shadow:5px 5px 5px 5px black;
+}
+
+textarea {
+  /* Pour aligner correctement les champs multilignes et leurs étiquettes */
+  vertical-align: top;
+  overflow-y: scroll;
+
+  /* Pour donner assez d'espace pour entrer du texte */
+  height: 15em;
+
+  /* Pour permettre aux utilisateurs de redimensionner un champ textuel horizontalement
+     Cela ne marche pas avec tous les navigateurs  */
+  resize: vertical;
+}
+
+.button {
+  /* Pour positionner les boutons de la même manière que les champs textuels */
+  padding-left: 150px; /* même dimension que les étiquettes */
+  
+}
+
+button {
+  /* Cette marge représente approximativement le même espace
+     que celui entre les étiquettes et les champs textuels */
+  margin-left: 2em;
+  padding: 5px 5px;
+  font-size: 20px;
+  color: black;
+  transition: all 0.5s ease;
+}
+
+
+
+
+/*Code CSS en lien avec code Javascript dans Head. Mise en couleur sous conditions*/
+
+#courriel:valid {
+  border-color: lightgreen;
+}
+#courriel:invalid {
+  border-color: red;
+}
+
+
+
+
+
+<!--Gestion de la photo dans la la section principale de ma page livre d'or-->
+
+#info_champs_obligatoires {
+    position: absolute;
+    margin-bottom: 30px;
+    margin-right: 20px;
+  
+    
+}
+#img_formulaire_lo{
+    width: 500px;
+    height: 300px;
+    margin-left: 220px;
+    margin-bottom: 40px;
+    margin-top: 80px;
+}
+
+
+
+
        
     </style>
 <body>
@@ -500,15 +664,55 @@
             <section id="contenu">
                 <article>
                     <div class="titre_formulaire">
-                        <h2>FORMULAIRE DE CONTACT</h2>
+                        <h2 align="center">FORMULAIRE DE CONTACT</h2>
                     </div>   
-                    <div class="formulaire">
-                        <form action="ch11_traitement_du_formulaire.php" method="post" autocomplete="off">
-                        Nom :<br/><input type="text" name="nom" style="width: 420px; height: 40px;" required><br/><br/>
-                        Prénom :<br/><input type="text" name="prénom" style="width: 420px; height: 40px;" required><br/><br/>
-                        Adresse email (Requis) :<br/><input type="email" name="email" style="width: 420px; height: 40px;" required><br/><br/>
-                        Commentaire :<br/><textarea rows="18" cols="60" name="commentaire"></textarea><br/><br/>
-                        <input type="submit" name="valider" value="Valider">
+                        <form id="commentaire_lo" action="X" method="post" autocomplete="off">
+                                <div>
+                                     <label for="nom">Nom :</label>
+                                     <input type="text" id="nom" name="user_name">
+                                </div>
+
+                                <div>
+                                      <label for="courriel">Courriel<b>*</b> :</label>
+                                      <input type="email" id="courriel" name="user_email">
+                                </div>
+
+                                <div>
+                                       <label for="message">Message :</label>
+                                       <textarea id="message" name="user_message"></textarea>
+                                </div>
+ 
+                                       <div class="button">
+                                       <button id="okButton" disabled type="submit">Envoyer le message</button>
+                                       </div>
+                        </form>
+                        <p id="info_champs_obligatoires"><b>*</b>Champs Obligatoires</p>
+                        <img id="img_formulaire_lo" src="https://mk0hotellenouveowyay.kinstacdn.com/wp-content/uploads/2010/10/bar-vue-mer-saint-malo.jpg" alt="Salon de discussion">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                         </form>
                     </div>
 

@@ -219,7 +219,7 @@
             margin-top : 2px;
             margin-bottom: 10px;
             border-radius: 40px;
-            height: 1220px;
+            height: 1240px;
 
         }
         .information{
@@ -458,6 +458,9 @@
             font-size: 20px;
             
         }
+        input:invalid {
+        border-color: red;
+        }
         <script>
 
         
@@ -503,19 +506,23 @@
                         <h2>FORMULAIRE DE RESERVATION EN LIGNE</h2>
                     </div>   
                     <div class="formulaire">
-                        <form action="ch11_traitement_du_formulaire.php" method="post" autocomplete="off">
-                        Nom :<br/><input type="text" name="nom" style="width: 420px; height: 35px;" required><br/><br/>
-                        Prénom :<br/><input type="text" name="prénom" style="width: 420px; height: 35px;" required><br/><br/>
-                        Adresse email (Requis) :<br/><input type="email" name="email" style="width: 480px; height: 35px;" required><br/><br/>
-                        Téléphone (Fixe) :<br/><input type="tel" name="tel" style="width: 300px; height: 35px;"><br/><br/>
-                        Téléphone (Mobile) :<br/><input type="tel" name="tel" style="width: 300px; height: 35px;"><br/><br/>
-                        Adresse complète :<br/><textarea rows="6" cols="30" name="adresse"></textarea><br/><br/>
-                        Date (Requis) :<input type="date" name="date" style="width: 300px; height: 35px;"><br/><br/>
-                        Heure (Requis) :<input type="time" name="time" style="width: 150px; height: 35px;"><br/><br/>
+                        <form action="X" method="post" autocomplete="off">
+                        Nom :<br/><input type="text" name="nom" style="width: 420px; height: 35px;" placeholder="nom" required><br/><br/>
+                        Prénom :<br/><input type="text" name="prénom" style="width: 420px; height: 35px;" placeholder="prénom" required><br/><br/>
+                        Adresse email (Requis) :<br/><input type="email" name="email" style="width: 480px; height: 35px;" placeholder="votre@dresse.com" required><br/><br/>
+                        Téléphone (Fixe) :<br/><input type="number_format" maxlength="10" name="tel" style="width: 300px; height: 35px;" placeholder="0123456789"><br/><br/>
+                        Téléphone (Mobile) :<br/><input type="tel" name="tel" style="width: 300px; height: 35px;" placeholder="0123456789" pattern="^[0-9]{10)$"><br/><br/>
+                        Adresse complète :<br/><input type="text" name="adresse" style="width: 500px; height: 40px;" placeholder="13 rue alfred de vigny, 64400, Oloron Sainte Marie"><br/><br/>
+                        Date (Requis) :<input type="date" name="date" style="width: 300px; height: 45px;"><br/><br/>
+                        Heure (Requis) :<input type="time" name="time" style="width: 150px; height: 45px;" placeholder="20h00"><br/><br/>
+                        Nombre de couverts :<br/><input type="text" name="nombre_de_personnes" style="width: 50px; height: 35px;" placeholder="2"><br/><br/>
                         <input type="submit" name="valider" value="Valider">                               <input type="submit" name="annuler" value="Annuler">
                         </form>
                     </div>
 
+
+
+                
 
                    
                     
@@ -523,8 +530,7 @@
                 </article>
             </section>
             <aside id="sidebar">
-                    <img id="lo" src="https://previews.123rf.com/images/valentint/valentint1704/valentint170400033/75400685-ic%C3%B4ne-de-r%C3%A9servation-en-ligne-en-ligne-bouton-site-de-r%C3%A9servation-sur-fond-blanc-.jpg
-                    " alt="Livre d'Or" width="450" height="400">
+                    <img id="lo" src="https://previews.123rf.com/images/valentint/valentint1704/valentint170400033/75400685-ic%C3%B4ne-de-r%C3%A9servation-en-ligne-en-ligne-bouton-site-de-r%C3%A9servation-sur-fond-blanc-.jpg" alt="Livre d'Or" width="450" height="400">
                     <p id="livre_or">Avec le nouvel outils de réservation en ligne que nous mettons à votre disposition il devient encore plus facile de réserver une table chez nous. Vous pouvez même réserver l'une de nos salles de réception pour un séminaire ou un évènement familial. Ne tardez plus, essayer cet outil c'est l'adopter !</p>
             </aside>
             <footer id="footer">
