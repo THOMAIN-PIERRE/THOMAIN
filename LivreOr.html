@@ -3,27 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Livre d'Or</title>
-        <!--<script>
-            const commentaire_lo = document.getElementById('signUpForm');
-            const courriel = document.getElementById('courriel');
-            const okButton = document.getElementById('okButton');
-  
-            courriel.addEventListener('keyup', function (event) {
-            isValidEmail = courriel.checkValidity();
-  
-            if ( courriel ) {
-            okButton.disabled = false;
-            } else {
-                okButton.disabled = true;
-            }
-            });
-  
-            okButton.addEventListener('click', function (event) {
-            commentaire_lo.submit();
-
-        </script>-->
         
-    
     </head>
     <style>
         
@@ -399,6 +379,10 @@
         }
 
 
+
+
+
+
         /* LE FOOTER*/
 
         #footer{
@@ -434,7 +418,12 @@
             left: 570px;
             
         }
-            
+
+
+
+
+
+        /*Photo Livre d'Or*/   
         #lo{
             
             margin-top: 30px; 
@@ -443,6 +432,7 @@
             position: relative;
             left: 50px;
         }
+        /*Cmmunication au client concernant le livre d'or*/
         #livre_or{
             Position: relative;
             margin-right: 50px;
@@ -454,67 +444,18 @@
             font-weight: bold;
             font-family: 'Lato', sans-serif;
             width: 450px;
-            Text-align: justify;
-            
-             
+            Text-align: justify;      
         }
         .titre_formulaire{
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
             font-family: 'Lato', sans-serif;
-            color: White;
-            font-size: 25px;
-            margin-top: 50px;
-            margin-bottom: 50px;
+            margin-top: 40px;
+            margin-bottom: 40px;
         }
-        .formulaire{
-            color: black;
-            font-size: 35px;
-            font-weight: bold;
-        }
-        input{
-            font-size: 35px;
-            font-weight: bold;
-        }
-        textarea{
-            font-size: 20px;
-            
-        }
-
-        /*Donner des styles a mon formulaire Livre d'Or*/
-
-        /*input[name=nom]:focus {
-        border: 7px solid yellow;
-        box-shadow:5px 5px 5px 5px black;
         
-        }
-        input[name=prenom]:focus {
-        border: 7px solid yellow;
-        box-shadow:5px 5px 5px 5px black;
-        
-        }
-        input[name=email]:focus {
-        border: 7px solid yellow;
-        box-shadow:5px 5px 5px 5px black;
-        font-family:Arial, Helvetica, sans-serif;
-        font-size: 20px;
-        }
-        textarea:focus {
-        border: 5px solid yellow;
-        box-shadow:5px 5px 5px 5px black;
-        overflow-y: scroll;
-        }
-        input:valid {
-        border: 7px solid lightgreen;   
-        }
-        input:invalid {
-        border-color: 5px solid red;
-        }
-        #btn_envoyer{
-            border: 7px solid none;  
-        }*/
-    
-
-
-
     /*Elements de stylisation de mon tableau*/    
         form {
   /* Pour le centrer dans la page */
@@ -575,57 +516,53 @@ textarea {
   resize: vertical;
 }
 
-.button {
+
   /* Pour positionner les boutons de la même manière que les champs textuels */
+.button {
   padding-left: 150px; /* même dimension que les étiquettes */
   
 }
 
-button {
+
   /* Cette marge représente approximativement le même espace
      que celui entre les étiquettes et les champs textuels */
+button {
   margin-left: 2em;
   padding: 5px 5px;
   font-size: 20px;
   color: black;
-  transition: all 0.5s ease;
+  border-radius: 30px;
 }
 
 
 
 
-/*Code CSS en lien avec code Javascript dans Head. Mise en couleur sous conditions*/
+/*Code pour afficher la couleur verte sur le cadre d'un champs rempli de façon valide*/
 
-#courriel:valid {
-  border-color: lightgreen;
-}
-#courriel:invalid {
-  border-color: red;
+input:valid {
+  border: 7px solid lightgreen;
 }
 
 
 
 
 
-//Gestion de la photo dans la la section principale de ma page livre d'or
+/*Gestion de la photo et de l'astérisque dans la section principale de ma page livre d'or*/
 
 #info_champs_obligatoires {
-   text-align: center;
-  
-    
+   text-align: left;
+   margin-left: 150px;
+   margin-top: 10px;   
 }
 #img_formulaire_lo{
     width: 600px;
     height: 400px;
-    margin-left: 150px;
+    margin-left: 145px;
     margin-bottom: 40px;
-    margin-top: 40px;
+    margin-top: 70px;
 }
 
-
-
-
-       
+ 
     </style>
 <body>
     <header> 
@@ -664,27 +601,24 @@ button {
                     <div class="titre_formulaire">
                         <h2 align="center">FORMULAIRE DE CONTACT</h2>
                     </div>   
-                        <form id="commentaire_lo" action="X" method="post" autocomplete="off">
-                                <div>
-                                     <label for="nom">Nom :</label>
-                                     <input type="text" id="nom" name="user_name">
-                                </div>
-
-                                <div>
-                                      <label for="courriel">Courriel<b>*</b> :</label>
-                                      <input type="email" id="courriel" name="user_email">
-                                </div>
-
-                                <div>
-                                       <label for="message">Message :</label>
-                                       <textarea id="message" name="user_message"></textarea>
-                                </div>
- 
-                                       <div class="button">
-                                       <button id="okButton" disabled type="submit">Envoyer le message</button>
-                                       </div>
+                        <form action="X" method="post" autocomplete="off">
+                             <div>
+                                 <label for="nom">Nom :</label>
+                                 <input type="text" id="nom" name="user_name" required>
+                                </div>
+                                <div>
+                                    <label for="courriel">Courriel<b>*</b> :</label>
+                                    <input type="email" id="courriel" name="user_email"required>
+                                </div>
+                                 <div>
+                                     <label for="message">Message :</label>
+                                     <textarea id="message" name="user_message"></textarea>
+                                    </div>
+                                    <div class="button">
+                                        <button id="okButton" type="submit">Envoyer le message</button>
+                                    </div>
                         </form>
-                        <p id="info_champs_obligatoires"><b>*</b>Champs Obligatoires</p>
+                        <p id="info_champs_obligatoires"><b>*</b>Champs Obligatoire</p>
                         <img id="img_formulaire_lo" src="https://mk0hotellenouveowyay.kinstacdn.com/wp-content/uploads/2010/10/bar-vue-mer-saint-malo.jpg" alt="Salon de discussion">
 
                         </form>

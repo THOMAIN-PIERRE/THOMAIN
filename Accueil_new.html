@@ -349,7 +349,7 @@
         /*Requête média visant a avoir un arrière plan de la page blanc et plus gris comme pour la version écran d'ordinateur : meilleur visibilité*/
         @media screen and (max-width: 768px) {
             body {
-                background-color: #fff;
+                background-color: white;
             }
         }
 
@@ -363,12 +363,48 @@
              }
          }
 
+         /*Je souhaite que la boîte #haut qui contient mes paragraphes et titres ne soit plus 
+         d'une taille fixe mais de taille relative afin qu'elle occupe toute la place
+         disponible dans l'élément parent <body>. Une marge extérieure est fixée à 5 pixels*/
+            @media screen and (max-width: 768px) {
+             #contenu{
+                 width: 98%;
+                 margin-right: 0px;
+                 margin-left: 0px;
+             }
+         }
+
          /*La couleur d'arrière plan du bandeau du haut 'sous la navbar et la photo d'entête doit 
          être noire avec une couleur de texte blanche plutôt que grise avec écritures blanches*/
          @media screen and (max-width: 768px) {
              div#haut{
                  background-color: #000;
                  color: #fff;
+             }
+         }
+        
+         /*Le contact téléphonique ne doit plus apparaitre en haut à droite de l'écran pour laisser de la place aux langues*/
+         @media screen and (max-width: 768px) {
+             .contact {
+                 display:none;
+             }
+         }
+
+
+
+
+
+         /*La photo d'entete ne doit plus apparaitre pour se focaliser sur le contenu texte*/
+         @media screen and (max-width: 768px) {
+             #image_entete {
+                 display:none;
+             }
+         }
+
+         /*La photo du chef et les paragraphe de texte ne doivent plus apparaitre pour se focaliser sur le contenu texte*/
+         @media screen and (max-width: 768px) {
+             #chef {
+                 display:none;
              }
          }
 
@@ -382,6 +418,34 @@
                  margin: 0 0 10px 0;
              }
          }
+
+         /*Les 2 conteneurs <section> et <aside> ne doivent plus être flottant, pour ne plus être 
+         à côté l'un de l'autre mais l'un au-dessus de l'autre. Cela permet un gain de place 
+         d'affichage horizontal*/
+         @media screen and (max-width: 768px) {
+             aside#sidebar {
+                 float: none;
+                 width: auto;
+                 margin: 0 0 10px 0;
+             }
+         }
+
+         /*Les 2 conteneurs <section> et <aside> ne doivent plus être flottant, pour ne plus être 
+         à côté l'un de l'autre mais l'un au-dessus de l'autre. Cela permet un gain de place 
+         d'affichage horizontal*/
+         @media screen and (max-width: 768px) {
+             #navigation {
+                 display:none;
+             }
+         }
+
+
+
+
+
+
+
+
 
          /*Je ne souhaite pas afficher la photo du plat du jour pour gagner de la place et me 
          concentrer sur le contenu texte de la page*/
@@ -398,6 +462,14 @@
              }
          } 
 
+         
+         } 
+         /*Je ne souhaite pas afficher le footer*/
+         @media screen and (max-width: 768px) {
+             #infos_complémentaires {
+                 display: none;
+             }
+         }
 
        
     </style>

@@ -457,8 +457,11 @@
         
         /* Style des champs du formulaire */
         input:focus {
-         border: 7px solid yellow;
+        border: 7px solid yellow;
         box-shadow:5px 5px 5px 5px black;
+        }
+        input:valid {
+        border: 7px solid lightgreen;
         }
        
     </style>
@@ -498,7 +501,8 @@
                 <article>
                     <div class="titre_formulaire">
                         <h2>FORMULAIRE DE RESERVATION EN LIGNE</h2>
-                    </div>   
+                    </div> 
+                      
                     <div class="formulaire">
                         <form action="X" method="post" autocomplete="off">
                         Nom :<br/><input type="text" name="nom" style="width: 420px; height: 35px;" placeholder="nom" required><br/><br/>
@@ -512,15 +516,7 @@
                         Nombre de couverts :<br/><input type="text" name="nombre_de_personnes" style="width: 50px; height: 35px;" placeholder="2"><br/><br/>
                         <input type="submit" name="valider" value="Valider">                               <input type="submit" name="annuler" value="Annuler">
                         </form>
-                    </div>
-
-
-
-                
-
-                   
-                    
-                        
+                    </div>      
                 </article>
             </section>
             <aside id="sidebar">
