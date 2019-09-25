@@ -226,7 +226,7 @@
             text-align: center;
             font-weight: bold;
             font-size: 50px;
-            padding-bottom: 10px;
+            padding-bottom: 10px; 
             color: red;
         }
         .jour{
@@ -454,18 +454,12 @@
             font-size: 35px;
             font-weight: bold;
         }
-        textarea{
-            font-size: 20px;
-            
-        }
-        input:invalid {
-        border-color: red;
-        }
-        <script>
-
         
-        
-        </script>
+        /* Style des champs du formulaire */
+        input:focus {
+         border: 7px solid yellow;
+        box-shadow:5px 5px 5px 5px black;
+        }
        
     </style>
 <body>
@@ -512,7 +506,7 @@
                         Adresse email (Requis) :<br/><input type="email" name="email" style="width: 480px; height: 35px;" placeholder="votre@dresse.com" required><br/><br/>
                         Téléphone (Fixe) :<br/><input type="number_format" maxlength="10" name="tel" style="width: 300px; height: 35px;" placeholder="0123456789"><br/><br/>
                         Téléphone (Mobile) :<br/><input type="tel" name="tel" style="width: 300px; height: 35px;" placeholder="0123456789" pattern="^[0-9]{10)$"><br/><br/>
-                        Adresse complète :<br/><input type="text" name="adresse" style="width: 500px; height: 40px;" placeholder="13 rue alfred de vigny, 64400, Oloron Sainte Marie"><br/><br/>
+                        Adresse complète :<br/><input type="text" name="adresse" style="width: 850px; height: 40px;" placeholder="13 rue alfred de vigny, 64400, Oloron Sainte Marie"><br/><br/>
                         Date (Requis) :<input type="date" name="date" style="width: 300px; height: 45px;"><br/><br/>
                         Heure (Requis) :<input type="time" name="time" style="width: 150px; height: 45px;" placeholder="20h00"><br/><br/>
                         Nombre de couverts :<br/><input type="text" name="nombre_de_personnes" style="width: 50px; height: 35px;" placeholder="2"><br/><br/>
