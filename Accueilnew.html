@@ -35,16 +35,24 @@
         }
         }
         /*Nom du restaurant*/
-        
-
-
-        
+        #mansalva{
+            position: relative;
+            bottom: 250px;
+            left: 500px;
+            font-family: 'Mansalva', cursive;
+            font-size: 80px;
+            color: white;
+            background-color: blue;
+            padding: 10px 15px;
+            border-radius: 40px;
+            border: 7px solid black;
+         }
         /*Image d'entête*/
         #image_entete{
             width: 1517px;
-            height: 100px;
+            height: 400px;
         }
-        /*---------------------------------------------------------------------------------------------------*/
+
         /*Code css de la page web*/
 
         /* Styles généraux*/
@@ -54,7 +62,8 @@
             font-family: 'Lato', sans-serif;
             
         }
-
+        
+        }
         body, h1, p{
             margin: 0;
 
@@ -109,9 +118,6 @@
             text-align: justify;
 
         }
-      
-        /*----------------------------------------------------------------------------------------------------------*/
-        /*BARRE DE NAVIGATION INTERNE AU CORPS DU DOCUMENT*/
         #navigation{
             
             background-color:#7c7878;
@@ -131,9 +137,7 @@
         #navigation a:hover {
          background-color: blue;
         }
-        /*FIN BARRE DE NAVIGATION INTERNE*/
 
-        /*Mise en forme photo de chef*/
         #chef{
            float:left;
            margin-top: 5px;
@@ -156,7 +160,7 @@
             text-align: center;
             margin-top: 50px; 
         }
-        /*-----------------------------------------------------------------------------------------------------------------*/
+
         /*Colonne latérale (ou sidebar)*/
         #sidebar{
             float: left;
@@ -222,8 +226,8 @@
             font-weight: bold;
             color: white
         }
-        /*----------------------------------------------------------------------------------------------------*/
-        /*BARRE DE NAVIGATION*/
+        
+        /*Barre de navigation*/
         /* Conteneur navbar */
         .navbar {
         overflow: hidden;
@@ -238,9 +242,8 @@
         font-weight: bold;
         color: white;
         text-align: center;
-        padding: 20px 41px;
+        padding: 20px 46.2px;
         text-decoration: none;
-        
         }
 
         /* Le container dropdown */
@@ -296,7 +299,7 @@
         display: block;
         }
 
-        /*----------------------------------------------------------------------------------------------------------------*/
+
         /* LE FOOTER*/
 
         #footer{
@@ -333,7 +336,10 @@
             
         }
 
-        /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/--
+
+
+
+
         /*REQUETE DE MEDIA : je cible la diffusion sur des écrans ayant une taille maximale de 768px */
 
         /*Requête média visant a avoir un arrière plan de la page blanc et plus gris comme pour la version écran d'ordinateur : meilleur visibilité*/
@@ -343,26 +349,24 @@
             }
         }
 
-        /*Je souhaite que la boîte <div id="conteneur" qui contient mon "contenu" et ma "sidebar" 
+        /*Je souhaite que la boîte <div id="conteneur" qui contient mon titre haut, mon "contenu" et ma "sidebar" et mon footer
         ne soit plus d'une taille fixe mais de taille relative afin qu'elle occupe toute la place
-         disponible dans l'élément parent <body>. Une marge extérieure est fixée à 5 pixels*/
+         disponible dans l'élément parent <body>. */
          @media screen and (max-width: 768px) {
              div#conteneur{
                  width: 100%;
-                 margin: 5px;
-                 background-color: #7c7878;
+                 margin: 0px;
              }
          }
 
          /*Je souhaite que la boîte #haut qui contient mes paragraphes et titres ne soit plus 
          d'une taille fixe mais de taille relative afin qu'elle occupe toute la place
-         disponible dans l'élément parent <body>.*/
+         disponible dans l'élément parent <body>. Une marge extérieure est fixée à 5 pixels*/
             @media screen and (max-width: 768px) {
              #contenu{
-                 width: 95%;
+                 width: 98%;
                  margin-right: 0px;
                  margin-left: 0px;
-                 background-color: #7c7878;
              }
          }
 
@@ -372,7 +376,6 @@
              div#haut{
                  background-color: #000;
                  color: #fff;
-                 margin-right: 2px;
              }
          }
         
@@ -384,15 +387,17 @@
          }
 
 
+
+
+
          /*La photo d'entete ne doit plus apparaitre pour se focaliser sur le contenu texte*/
          @media screen and (max-width: 768px) {
              #image_entete {
-                max-width: 100%;
-	            height: auto;
+                 display:none;
              }
          }
 
-         /*La photo du chef et les paragraphe de texte ne doivent plus apparaitre pour se focaliser sur le contenu texte*/
+         /*La photo du chef ne doit plus apparaitre pour se focaliser sur le contenu texte*/
          @media screen and (max-width: 768px) {
              #chef {
                  display:none;
@@ -407,7 +412,6 @@
                  float: none;
                  width: auto;
                  margin: 0 0 10px 0;
-                 margin-right:30px;
              }
          }
 
@@ -419,21 +423,19 @@
                  float: none;
                  width: auto;
                  margin: 0 0 10px 0;
-                 background-color: #7c7878;
              }
          }
 
-         /*Les 2 conteneurs <section> et <aside> ne doivent plus être flottant, pour ne plus être 
-         à côté l'un de l'autre mais l'un au-dessus de l'autre. Gain de place 
-         d'affichage horizontal*/
+         /*Supression de la barre de navigation vers les menus du jour de la semaine*/
          @media screen and (max-width: 768px) {
              #navigation {
                  display:none;
              }
          }
 
+
          /*Je ne souhaite pas afficher la photo du plat du jour pour gagner de la place et me 
-         concentrer sur le contenu texte de la page*/
+         concentrer sur le contenu texte de la page qui le décrit*/
          @media screen and (max-width: 768px) {
              aside#sidebar img {
                  display: none;
@@ -444,104 +446,29 @@
          @media screen and (max-width: 768px) {
              article h1 {
                  font-size: 1.5em;
-                 color:black;
              }
          } 
 
          
+         } 
          /*Je ne souhaite pas afficher le footer*/
          @media screen and (max-width: 768px) {
-             #infos_complémentaires {
+             #footer {
                  display: none;
              }
          }
-
-         /*Changer la couleur de la police de caractère en noir pour l'adresse et les horaires dans
-          la sidebar pour s'adapter au nouveau fond de page blanc*/
-         @media screen and (max-width: 768px) {
-             .horaires{
-                 color: black;
-             }
-         }
-         @media screen and (max-width: 768px) {
-             .adresse{
-                 color: black;
-             }
-         }
-
-         /*Fond de navbar noir au lieu de gris*/
-         @media screen and (max-width: 768px) {
-               .nav{
-                
-                 background-color: black;
-                 text-align: center;
-             }
-         }
-         
-         /*Centrer les langues*/
-         @media screen and (max-width: 768px) {
-               .langue{
-                text-align: center;
-             }
-         }
-
-         /*Enlever le footer*/
-         @media screen and (max-width: 768px) {
-                footer{
-                 display: none;
-         }
-         }
-         /*Redimentionner la googlemap*/
-         @media screen and (max-width: 768px) {
-                iframe{
-                max-width: 100%;
-	            height: auto;
-         }
-         }
-         /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-         /*REQUETE DE MEDIA : je cible la diffusion sur des écrans ayant une taille minimale de 768px */
-
-         /*Décaler mon #contenu vers la droite*/ 
-         @media screen and (min-width: 768px) {
-            div#conteneur{
-                 max-width: 100%;
-                 margin-left: 20px;
-                 background-color: #7c7878;
-             }
-         }
-
-         /*Décaler mon menu nav vers la droite*/ 
-         @media screen and (min-width: 768px) {
-            nav{ 
-                text-align: center;
-                 max-width: 100%;
-                 margin-left: 50px;
-                 background-color: #7c7878;
-             }
-         }
-
-
-
-
-
-
-
-
-
-
-
 
        
     </style>
 <body>
     <header> 
         <div class="up">
-        <p class="langue"><a href="Reservation.html">Français</a> | <a href="Reservation.html">Anglais</a></p>
+        <p class="langue">Français | English</p>
         <p class="contact"> Contact &nbsp;&nbsp;05 59 39 70 23</p>
         </div>   
     </header>
     <nav class="navbar">
-            <a href="Accueil_new.html" target="_blank">ACCUEIL</a>
+            <a href="Accueil.html" target="_blank">ACCUEIL</a>
             <a href="Restaurant.html" target="_blank">RESTAURANT</a>
             <a href="Carte.html" target="_blank">CARTE</a>
                 <div class="dropdown">
@@ -569,7 +496,7 @@
             <section id="contenu">
                 <article>
                     <h1>UN RESTAURANT MILITANT</h1>
-                    <p>Le Counic est un concept de <strong>restaurant éco-responsable</strong> dont le but est d'offrir à tous l'accès à des <strong>produits frais, fabriqués localements par de petits producteurs</strong>. Un plât spécial est ainsi crée chaque jour à partir de produits 100% régionaux par notre chef. Dès la conception de nos menus, nous veillons à limiter notre empreinte carbone en choisissant des produits de saison issus de <strong>l’agriculture biologique locale</strong>, en veillant à l’équilibre légumes / viande du plat. Nous <strong>recyclons nos épluchures et réduisons les portions</strong> pour éviter le gaspillage alimentaire. Nous veillons également à <strong>limiter notre consommation d'eau et d'énergie</strong>. C'est pourquoi, l'eau de nettoyage des légumes est réutilisée pour arroser les herbes aromatiques qui servent à l'élaboration de vos plâts. En salle, la décoration et le mobilier reflétent notre engagement. Nous avons choisis des <strong>matériaux nobles et durables</strong> comme le bois et un éclairage à LED pour réduire la consommation d’énergie. Voilà les valeurs que nous défendons et les engagements que nous prenons.</p> 
+                    <p>Le Counic est un concept de <strong>restaurant écoresponsable</strong> dont le but est d'offrir à tous l'accès à des <strong>produits frais, fabriqués localements par de petits producteurs</strong>. Un plât spécial est ainsi crée chaque jour à partir de produits 100% régionaux par notre chef. Dès la conception de nos menus, nous veillons à limiter notre empreinte carbone en choisissant des produits de saison issus de <strong>l’agriculture biologique locale</strong>, en veillant à l’équilibre légumes / viande du plat. Nous <strong>recyclons nos épluchures et réduisons les portions</strong> pour éviter le gaspillage alimentaire. Nous veillons également à <strong>limiter notre consommation d'eau et d'énergie</strong>. C'est pourquoi, l'eau de nettoyage des légumes est réutilisée pour arroser les herbes aromatiques qui servent à l'élaboration de vos plâts. En salle, la décoration et le mobilier reflétent notre engagement. Nous avons choisis des <strong>matériaux nobles et durables</strong> comme le bois et un éclairage à LED pour réduire la consommation d’énergie. Voilà les valeurs que nous défendons et les engagements que nous prenons.</p> 
                     <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</p>
                 </article>
                 <article>
@@ -586,15 +513,15 @@
                         <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</p> 
                         <p class="menu_type">DEJEUNER (Entrée-Plât-Dessert, hors boissons)</p>
                         <ul class="listemenus">
-                            <li>Menu Eco-responsable................. 20 euros</li>
-                            <li>Menu Classique....................... 30 euros</li>
-                            <li>Menu Prestige.........................40 euros</li>   
+                            <li>Menu Eco-responsable &rarr;  20 euros</li>
+                            <li>Menu Classique       &rarr;  30 euros</li>
+                            <li>Menu Prestige        &rarr;  40 euros</li>   
                         </ul>
                         <p class="menu_type">DINER (Entrée-Plât-Dessert, hors boissons)</p>
                         <ul class="listemenus">
-                            <li>Menu Eco-responsable..................20 euros</li>
-                            <li>Menu Classique........................30 euros</li>
-                            <li>Menu Prestige.........................40 euros</li>   
+                            <li>Menu Eco-responsable &rarr;  20 euros</li>
+                            <li>Menu Classique       &rarr;  30 euros</li>
+                            <li>Menu Prestige        &rarr;  40 euros</li>   
                         </ul>
                 </article>
                 <p id="mansalva">LE COUNIC</p>
@@ -661,4 +588,5 @@
 
 
     
+
 

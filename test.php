@@ -12,9 +12,9 @@
 			echo "Infos : ", $nom, " ", $prenom; //pour vérifier en debug !
 
 			//connexion à la base de données
-			$db="formulaire_reservation"; //le nom de la base de données
+			$db="livre_or"; //le nom de la base de données
 			$username="phpMyAdmin"; //l'utilisateur mysql
-			$password="admin"; //et son pwd 
+			$password="Pandore11,"; //et son pwd 
 			$bdd = null;
 			try {
 				$bdd = new PDO("mysql:dbname=$db;host=localhost", $username, $password);
@@ -38,3 +38,30 @@
 
 
 ?>
+
+<!--structure html de la page -->
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+	<meta name="viewport" content="width=device-width" />
+	<title>Formulaire PHP</title>
+</head>
+<body>
+	
+	<!-- le formulaire renvoie sur la page elle-même pour le traitement -->
+	<form action="." method="post">
+		<label for="tbNom">Nom</label>
+		<input type="text" id="tbNom" name="tbNom" />
+		<label for="tbPrenom">Prenom</label>
+		<input type="text" id="tbPrenom" name="tbPrenom" />
+
+		<button type="submit">Ok</button>
+	</form>
+
+
+
+</body>
+
+</html>

@@ -129,7 +129,93 @@
             
 
         }
-        
+        #navigation{
+            margin: 0 0 5px 0;
+            padding: 0;
+            background-color: blue;
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+        }
+        #navigation a{
+            text-decoration: none;
+            color: white;
+            font-size: 17px;
+            margin-bottom: 15px;
+        }
+        #panorama{
+           float:left;
+           margin-top: 5px;
+           margin-right: 10px;
+        }
+        #salle_restaurant1{
+           float:right;
+           margin-top: 5px;
+           margin-right: 10px;
+        }
+        #salle_restaurant2{
+           float:left;
+           margin-top: 5px;
+           margin-right: 10px;
+           
+        }
+        #salle_séminaire1{
+           float:left;
+           margin-top: 5px;
+           margin-right: 10px;
+           margin-left: 200px;
+        }
+        #salle_séminaire2{
+           float:left;
+           margin-top: 5px;
+           margin-right: 10px;
+        }
+        .listemenus{
+            font-size: 35px;
+            font-weight: bold;
+            list-style: none;
+            text-align: center;
+            margin-top: 50px; 
+            color: white;  
+        }
+        #menus{
+            font-weight: bold;
+            margin-top: 20px;
+            
+        }
+        .menu_type{
+            font-size: 80px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 50px; 
+        }
+        .menu{
+            color:white;
+            text-align: center;
+            font-size: 40px;
+            margin-top: 40px;
+            margin-bottom : 40px;
+        }
+        .table{
+            color:black;
+            text-align: center;
+            font-size: 40px;
+        }
+        .vin{
+            color:white;
+            font-size: 40px;
+            list-style: none;
+        }
+        .bar{
+            color:white;
+            text-align: justify;
+            font-size: 40px;
+        }
+        #carte_des_vins{
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
        
         /*Colonne latérale*/
         #sidebar{
@@ -144,12 +230,80 @@
             height: 1230px;
 
         }
-        
+        .information{
+            text-align: center;
+            font-weight: bold;
+            font-size: 50px;
+            padding-bottom: 10px;
+            color: red;
+        }
+        .jour{
+            text-align: center;
+            font-weight: bold;
+            font-size: 30px;
+            color: white;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        .plat{
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+            color: white;
+            margin-top: 15px;
+            margin-bottom: 60px;
+        }
+        .
         #sidebar p.centre{
             text-align: center;
 
         }
+        .adresse{
+            text-align: center;
+            font-weight: bold;
+            font-size: 35px;
+            color: white;
+            margin-top: 90px;
+            margin-bottom: 90px;
+            width: 460px;
+            margin-left: 40px;
+        }
+        .poste_de_travail{
+            text-align: center;  
+            margin-bottom: 90px;
+        }
+        .photo_assiette{
+            text-align: center;  
+            margin-bottom: 60px;
+            margin-left: 10px;
+        }
         
+        .contact{
+            text-align: center;
+            margin-top: 90px;
+            margin-left: 5px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 60px;
+            
+        }
+        .horaires{
+            text-align: center;
+            margin-top: 180px;
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+        }
+        .lien_livre_or{
+            text-align: justify;
+            margin-left: 100px;
+            margin-top: 120px;
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+            width: 350px;
+        }
         .lo{
             text-align: justify;
             margin-left: 40px;
@@ -159,7 +313,7 @@
             width: 350px;
         }
         
-        /*------------------------------------------------------------------------------------------------------*/
+        
         /*Barre de navigation*/
         /* Conteneur navbar */
         .navbar {
@@ -233,7 +387,10 @@
         }
 
 
-        /*------------------------------------------------------------------------------------------------*/
+
+
+
+
         /* LE FOOTER*/
 
         #footer{
@@ -269,8 +426,8 @@
             left: 570px;
             
         }
-        /*-----------------------------------------------------------------------------------------------*/
-        /*Mise en forme photo de la sidebar page Livre d'Or*/   
+
+        /*Photo sidebar page Livre d'Or*/   
         #lo{
             
             margin-top: 30px; 
@@ -279,7 +436,7 @@
             position: relative;
             left: 50px;
         }
-        /*Communication au client concernant le livre d'or (sidebar)*/
+        /*Cmmunication au client concernant le livre d'or*/
         #livre_or{
             Position: relative;
             margin-right: 50px;
@@ -293,7 +450,6 @@
             width: 450px;
             Text-align: justify;      
         }
-
         /*Titre du formulaire du livre d'or*/
         .titre_formulaire{
             text-align: center;
@@ -305,122 +461,121 @@
             margin-bottom: 40px;
         }
         
-        /*---------------------------------------------------------------------------------------------------------*/
-        /*Elements de stylisation de mon formulaire*/    
+    /*Elements de stylisation de mon tableau*/    
         form {
-        /* Pour le centrer dans la page */
-            margin: 0 auto;
-            width: 600px;
+  /* Pour le centrer dans la page */
+  margin: 0 auto;
+  width: 600px;
 
-        /* Pour voir les limites du formulaire */
-            padding: 1em;
-            border: 2px solid white;
-            border-radius: 3em;
-        }
+  /* Pour voir les limites du formulaire */
+  padding: 1em;
+  border: 2px solid white;
+  border-radius: 3em;
+}
 
-        div + div {
-            margin-top: 1em;
-        }
+div + div {
+  margin-top: 1em;
+}
 
-        label {
-        /* Afin de s'assurer que toutes les étiquettes aient la même dimension et soient alignées correctement */
-            display: inline-block;
-            width: 100px;
-            text-align: right;
-            font-size: 22px;
+label {
+  /* Afin de s'assurer que toutes les étiquettes aient la même dimension et soient alignées correctement */
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  font-size: 22px;
   
-        }
-        input, textarea {
-        /* Afin de s'assurer que tous les champs textuels utilisent la même police
-        Par défaut, textarea utilise une police à espacement constant */
-            font: 1.4em sans-serif;
-            text-align:center;
-        /* Pour donner la même dimension à tous les champs textuels */
-            width: 400px;
-            height: 40px;
-            border-radius: 15px;
+}
+
+input, textarea {
+  /* Afin de s'assurer que tous les champs textuels utilisent la même police
+     Par défaut, textarea utilise une police à espacement constant */
+  font: 1.4em sans-serif;
+
+  /* Pour donner la même dimension à tous les champs textuels */
+  width: 400px;
+  height: 40px;
+  border-radius: 15px;
  
-            -moz-box-sizing: border-box;
-             box-sizing: border-box;
 
-        /* Pour harmoniser l'apparence des bordures des champs textuels */
-            border: 1px solid white;
-        }
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
 
-        input:focus, textarea:focus {
-        /* Afin de réhausser les éléments actifs */
-            border: 5px solid yellow;
-            box-shadow:5px 5px 5px 5px black;
-        }
+  /* Pour harmoniser l'apparence des bordures des champs textuels */
+  border: 1px solid white;
+}
 
-        textarea {
-        /* Pour aligner correctement les champs multilignes et leurs étiquettes */
-            vertical-align: top;
+input:focus, textarea:focus {
+  /* Afin de réhausser les éléments actifs */
+  border: 5px solid yellow;
+  box-shadow:5px 5px 5px 5px black;
+}
 
-
-        /* Pour donner assez d'espace pour entrer du texte */
-            height: 15em;
-
-        /* Pour permettre aux utilisateurs de redimensionner un champ textuel horizontalement
-        Cela ne marche pas avec tous les navigateurs  */
-            resize: vertical;
-        }
+textarea {
+  /* Pour aligner correctement les champs multilignes et leurs étiquettes */
+  vertical-align: top;
 
 
-        /* Pour positionner les boutons de la même manière que les champs textuels */
-        .button {
-            padding-left: 150px; /* même dimension que les étiquettes */
+  /* Pour donner assez d'espace pour entrer du texte */
+  height: 15em;
+
+  /* Pour permettre aux utilisateurs de redimensionner un champ textuel horizontalement
+     Cela ne marche pas avec tous les navigateurs  */
+  resize: vertical;
+}
+
+
+  /* Pour positionner les boutons de la même manière que les champs textuels */
+.button {
+  padding-left: 150px; /* même dimension que les étiquettes */
   
-        }
+}
 
 
-        /* Cette marge représente approximativement le même espace
-        que celui entre les étiquettes et les champs textuels */
-        button {
-            margin-left: 2em;
-            padding: 10px 10px;
-            font-size: 20px;
-            color: white;
-            border-radius: 30px;
-            background-color: green;
-            font-weight: bold;
-            border: 2px solid white;
-        }
+  /* Cette marge représente approximativement le même espace
+     que celui entre les étiquettes et les champs textuels */
+button {
+  margin-left: 2em;
+  padding: 5px 5px;
+  font-size: 20px;
+  color: black;
+  border-radius: 30px;
+  background-color: white;
+}
 
 
-       /*Code pour afficher la couleur verte sur le cadre d'un champs rempli de façon valide*/
+/*Code pour afficher la couleur verte sur le cadre d'un champs rempli de façon valide*/
 
-        input:valid {
-            border: 5px solid lightgreen;
-        }
+input:valid {
+  border: 5px solid lightgreen;
+}
 
 
-        /*Gestion de la photo et de l'astérisque dans la section principale de ma page livre d'or*/
+/*Gestion de la photo et de l'astérisque dans la section principale de ma page livre d'or*/
 
-        #info_champs_obligatoires {
-            text-align: left;
-            margin-left: 150px;
-            margin-top: 10px;   
-        }
-        #img_formulaire_lo{
-            width: 600px;
-            height: 400px;
-            margin-left: 145px;
-            margin-bottom: 40px;
-            margin-top: 70px;
-        }
+#info_champs_obligatoires {
+   text-align: left;
+   margin-left: 150px;
+   margin-top: 10px;   
+}
+#img_formulaire_lo{
+    width: 600px;
+    height: 400px;
+    margin-left: 145px;
+    margin-bottom: 40px;
+    margin-top: 70px;
+}
 
  
     </style>
 <body>
     <header> 
         <div class="up">
-        <p class="langue"><a href="LivreOr.html">Français</a> | <a href="LivreOr.html">Anglais</a></p>
+        <p class="langue">Français | English</p>
         <p class="contact"> Contact &nbsp;&nbsp;05 59 39 70 23</p>
         </div>   
     </header>
     <nav class="navbar">
-            <a href="Accueil_new.html" target="_blank">ACCUEIL</a>
+            <a href="Accueil.html" target="_blank">ACCUEIL</a>
             <a href="Restaurant.html" target="_blank">RESTAURANT</a>
             <a href="Carte.html" target="_blank">CARTE</a>
                 <div class="dropdown">
