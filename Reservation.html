@@ -415,6 +415,12 @@
             border: 2px solid white;
         }
 
+        /*Code pour afficher la couleur verte sur le cadre d'un champs rempli de façon valide*/
+
+        input:valid {
+            border: 5px solid lightgreen;
+        }
+
 
         /*Mise e forme du message "Champs obligatoires" dans la section principale de ma page*/
 
@@ -485,7 +491,7 @@
                             </div>
                             <div>
                                  <label for="prenom">Prénom&nbsp;</label>
-                                 <input type="text" id="prenom" name="firstname">
+                                 <input type="text" id="prenom" name="firstname" required>
                             </div>
                             <div>
                             <div>
@@ -494,11 +500,11 @@
                             </div>
                             <div>
                                   <label for="telmobile">Tél Mobile<b>*</b></label>
-                                  <input type="telmobile" id="telephone" name="mobilephone" placeholder="N° a 10 chiffres" maxlength="10" required>
+                                  <input type="telmobile" id="telephone" name="mobilephone" placeholder="N° a 10 chiffres" maxlength="10">
                             </div>
                             <div>
                                    <label for="telfixe">Tél Fixe&nbsp;</label>
-                                   <input type="tel" id="tel" name="phone" placeholder="N° a 10 chiffres" maxlength="10"></input>
+                                   <input type="tel" id="tel" name="phone" placeholder="N° a 10 chiffres" maxlength="10" required></input>
                             </div>
                             <div>
                                     <label for="adresse">Adresse&nbsp;</label>

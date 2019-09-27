@@ -604,7 +604,7 @@ input:valid {
                     <div class="titre_formulaire">
                         <h2 align="center">FORMULAIRE DE CONTACT</h2>
                     </div>   
-                    <form name="formulaire" action="index.php" method="post" autocomplete="off">
+                    <form name="formulaire" action="test.php" method="post" autocomplete="off">
                             <div>
                                  <label for="nom">Nom<b>*</b>&nbsp</label>
                                  <input type="text" id="nom" name="user_name" required>

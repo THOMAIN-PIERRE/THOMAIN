@@ -7,14 +7,15 @@
 		try{
 			
 			//recup des valeurs dans des variables
-			$nom = $_POST["tbNom"];
-			$prenom = $_POST["tbPrenom"];
-			echo "Infos : ", $nom, " ", $prenom; //pour vérifier en debug !
+			$user_name= $_POST["user_name"];
+            $user_email = $_POST["user_email"];
+            $user_message = $_POST["user_message"];
+			echo "Infos : ", $user_name, " ", $user_email, " " , $user_message; //pour vérifier en debug !
 
 			//connexion à la base de données
-			$db="formulaire_reservation"; //le nom de la base de données
-			$username="phpMyAdmin"; //l'utilisateur mysql
-			$password="admin"; //et son pwd 
+			$db="livre_or"; //le nom de la base de données
+			$username="phpmyadmin"; //l'utilisateur mysql
+			$password="Pandore11,"; //et son pwd 
 			$bdd = null;
 			try {
 				$bdd = new PDO("mysql:dbname=$db;host=localhost", $username, $password);
@@ -25,9 +26,10 @@
 			
 			//préparation de la requete d'insertion
 			//c'est une "requête paramétrée"
-			$rep=$bdd->prepare("insert into reservation (nom, prenom) values (:nom, :prenom)");
-			$rep->bindParam('nom', $nom, PDO::PARAM_STR);
-			$rep->bindParam('prenom', $prenom, PDO::PARAM_STR);
+			$rep=$bdd->prepare("insert into table_livre_or (NOM, E-MAIL, COMMENTAIRE) values (:user_name, :user_email, :user_message)");
+			$rep->bindParam('NOM', $user_name, PDO::PARAM_STR);
+            $rep->bindParam('E-MAIL', $user_email, PDO::PARAM_STR);
+            $rep->bindParam('COMMENTAIRE', $user_message, PDO::PARAM_STR);
 			$rep->execute();
 			echo "Inscription effectuée !"; //pour vérifier en debug !
 		}
