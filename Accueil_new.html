@@ -356,185 +356,185 @@
             body {
                 background-color: white;
             }
-        }
+        
 
         /*Je souhaite que la boîte <div id="conteneur" qui contient mon "contenu" et ma "sidebar" 
         ne soit plus d'une taille fixe mais de taille relative afin qu'elle occupe toute la place
          disponible dans l'élément parent <body>. Une marge extérieure est fixée à 5 pixels*/
-         @media screen and (max-width: 768px) {
+         
              div#conteneur{
                  width: 100%;
                  margin: 5px;
                  background-color: white;
              }
-         }
+         
 
          /*Je souhaite que la boîte #haut qui contient mes paragraphes et titres ne soit plus 
          d'une taille fixe mais de taille relative afin qu'elle occupe toute la place
          disponible dans l'élément parent <body>.*/
-            @media screen and (max-width: 768px) {
+           
              #contenu{
                  width: 95%;
                  margin-right: 0px;
                  margin-left: 0px;
                  background-color: white;
              }
-         }
+         
 
          /*La couleur d'arrière plan du bandeau du haut 'sous la navbar et la photo d'entête doit 
          être noire avec une couleur de texte blanche plutôt que grise avec écritures blanches*/
-         @media screen and (max-width: 768px) {
+         
              div#haut{
                  background-color: #000;
                  color: #fff;
                  margin-right: 2px;
              }
-         }
+         
         
          /*Le contact téléphonique ne doit plus apparaitre en haut à droite de l'écran pour laisser de la place aux langues*/
-         @media screen and (max-width: 768px) {
+         
              .contact {
                  display:none;
              }
-         }
+         
 
 
          /*La photo d'entete ne doit plus apparaitre pour se focaliser sur le contenu texte*/
-         @media screen and (max-width: 768px) {
+         
              #image_entete {
                 max-width: 100%;
 	            height: auto;
              }
-         }
+         
 
          /*La photo du chef et les paragraphe de texte ne doivent plus apparaitre pour se focaliser sur le contenu texte*/
-         @media screen and (max-width: 768px) {
+         
              #chef {
                  display:none;
              }
-         }
+         
 
          /*Les 2 conteneurs <section> et <aside> ne doivent plus être flottant, pour ne plus être 
          à côté l'un de l'autre mais l'un au-dessus de l'autre. Cela permet un gain de place 
          d'affichage horizontal*/
-         @media screen and (max-width: 768px) {
+         
              aside#sidebar {
                  float: none;
                  width: auto;
                  margin: 0 0 10px 0;
                  margin-right:30px;
              }
-         }
+         
 
          /*Les 2 conteneurs <section> et <aside> ne doivent plus être flottant, pour ne plus être 
          à côté l'un de l'autre mais l'un au-dessus de l'autre. Cela permet un gain de place 
          d'affichage horizontal*/
-         @media screen and (max-width: 768px) {
+         
              aside#sidebar {
                  float: none;
                  width: auto;
                  margin: 0 0 10px 0;
                  background-color: white;
              }
-         }
+         
 
          /*Les 2 conteneurs <section> et <aside> ne doivent plus être flottant, pour ne plus être 
          à côté l'un de l'autre mais l'un au-dessus de l'autre. Gain de place 
          d'affichage horizontal*/
-         @media screen and (max-width: 768px) {
+         
              #navigation {
                  display:none;
              }
-         }
+         
 
          /*Je ne souhaite pas afficher la photo du plat du jour pour gagner de la place et me 
          concentrer sur le contenu texte de la page*/
-         @media screen and (max-width: 768px) {
+         
              aside#sidebar img {
                  display: none;
              }
-         }
+         
 
          /*J'adapte la taille des titres h1 dans les <article> pour améliorer leur visibilité*/
-         @media screen and (max-width: 768px) {
+         
              article h1 {
                  font-size: 1.5em;
                  color:black;
              }
-         } 
+         
 
          
          /*Je ne souhaite pas afficher le footer*/
-         @media screen and (max-width: 768px) {
+         
              #infos_complémentaires {
                  display: none;
              }
-         }
+         
 
          /*Changer la couleur de la police de caractère en noir pour l'adresse et les horaires dans
           la sidebar pour s'adapter au nouveau fond de page blanc*/
-         @media screen and (max-width: 768px) {
+         
              .horaires{
                  color: black;
              }
-         }
-         @media screen and (max-width: 768px) {
+         
+        
              .adresse{
                  color: black;
              }
-         }
+         
 
          /*Fond de navbar noir au lieu de gris*/
-         @media screen and (max-width: 768px) {
+         
                .nav{
                 
                  background-color: black;
                  text-align: center;
              }
-         }
+         
          
          /*Centrer les langues*/
-         @media screen and (max-width: 768px) {
+         
                .langue{
                 text-align: center;
              }
-         }
+         
 
          /*Enlever le footer*/
-         @media screen and (max-width: 768px) {
+         
                 footer{
                  display: none;
          }
-         }
+         
          /*Redimentionner la googlemap*/
-         @media screen and (max-width: 768px) {
+         
                 iframe{
                 max-width: 100%;
 	            height: auto;
          }
-         }
+         
          /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
          /*REQUETE DE MEDIA : je cible la diffusion sur des écrans ayant une taille minimale de 768px */
 
          /*Décaler mon #contenu vers la droite*/ 
-         @media screen and (min-width: 768px) {
+         
             div#conteneur{
                  max-width: 100%;
                  margin-left: 20px;
                  background-color: #7c7878;
              }
-         }
+         
 
          /*Décaler mon menu nav vers la droite*/ 
-         @media screen and (min-width: 768px) {
+        
             nav{ 
                 text-align: center;
                  max-width: 100%;
                  margin-left: 50px;
                  background-color: #7c7878;
              }
-         }
-
+         
+        }
 
 
 

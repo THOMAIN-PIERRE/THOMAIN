@@ -414,52 +414,55 @@
         /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/--
         /*REQUETE DE MEDIA : je cible la diffusion sur des écrans ayant une taille maximale de 768px */
 
-        /*Requête pour supprimer la photo d'entête*/
+        
         @media screen and (max-width: 768px) {
+             /*Requête pour supprimer la photo d'entête*/
             #image_entete {
                 max-width: 100%;
 	            height: auto;
             }
-        }
-        /*Requête pour supprimer le footer*/
-        @media screen and (max-width: 768px) {
+        
+       
+        
+            /*Requête pour supprimer le footer*/
             #footer {
                 display: none;
             }
-        }
+        
         /*Les 2 conteneurs <section> et <aside> ne doivent plus être flottant, pour ne plus être 
          à côté l'un de l'autre mais l'un au-dessus de l'autre. Cela permet un gain de place 
          d'affichage horizontal*/
-         @media screen and (max-width: 768px) {
+         
              aside#sidebar {
                  float: none;
                  width: auto;
                  margin: 0 0 10px 0;
                  background-color: white;
              }
-         }
+         
         /*Redimensionner la photo livre d'or*/
-        @media screen and (max-width: 768px) {
-                #lo{
+        
+             #lo{
                 max-width: 100%;
 	            height: auto;
          }
-         }
+         
          /*Redimenssionner la photo livre d'or*/
-        @media screen and (max-width: 768px) {
-                #img_formulaire_lo{
+        
+            #img_formulaire_lo{
                 display: none;  
          }
-         }
+         
 
 
          /*Redimenssionner le paragraphe texte livre_or*/
-        @media screen and (max-width: 768px) {
+        
                 #livre_or{
                 max-width: 100%;
 	            height: auto;       
          }
-         }
+         
+        }
          
 
 
