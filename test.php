@@ -13,8 +13,8 @@
 
 			//connexion à la base de données
 			$db="livre_or"; //le nom de la base de données
-			$username="phpMyAdmin"; //l'utilisateur mysql
-			$password="Pandore11,"; //et son pwd 
+			$username="username"; //l'utilisateur mysql
+			$password="password"; //et son pwd 
 			$bdd = null;
 			try {
 				$bdd = new PDO("mysql:dbname=$db;host=localhost", $username, $password);
